@@ -35,8 +35,8 @@ then
 elif [[ $2 == "hsp" ]];
 then
     algorithm="hsp"
-    # exps=("hsp-S2-s24" "hsp-S2-s36")
-    exps=("hsp-S2-s12" "hsp-S2-s24" "hsp-S2-s36")
+    exps=("hsp-S2-s36")
+    # exps=("hsp-S2-s12" "hsp-S2-s24" "hsp-S2-s36")
 elif [[ $2 == "cole" ]];
 then
     algorithm="cole"
@@ -88,14 +88,14 @@ for (( i=0; i<$len; i++ )); do
         eval_exp="eval-${agent_name}"
         yml=${yml_dir}/${eval_exp}.yml
         echo ${bias_yml}
-        sed -e "s/agent_name/${agent_name}/g" -e "s/algorithm/${algorithm}/g" -e "s/population/${exp_name}/g" -e "s/seed/${seed}/g" "${bias_yml}" > "${yml}"
+        sed -e "s/agent_name/${agent_name}/g" -e "s/algorithm/${algorithm}/g" -e "s/hsp/${exp_name}/g" -e "s/seed/${seed}/g" "${bias_yml}" > "${yml}"
         echo "${yml}"
         if [[ (${layout} == "random3_m" && $algorithm == "cole")  || $exp == *"mlp" ]]; then
             sed -i -e "s/rnn_policy_config/mlp_policy_config/g" "${yml}"
         fi
         echo ${n}
-        python eval/eval_with_population.py --env_name ${env} --algorithm_name ${algo} --experiment_name "${eval_exp}" --layout_name "${layout}" \
-        --num_agents ${num_agents} --seed 1 --episode_length 400 --n_eval_rollout_threads $((n * 2)) --eval_episodes $((n * 4)) --eval_stochastic --dummy_batch_size 2 \
+        python ../eval/eval_with_population.py --env_name ${env} --algorithm_name ${algo} --experiment_name "${eval_exp}" --layout_name "${layout}" \
+        --num_agents ${num_agents} --seed 1 --episode_length 400 --n_eval_rollout_threads $((n * 20)) --eval_episodes $((n * 40)) --eval_stochastic --dummy_batch_size 2 \
         --use_proper_time_limits \
         --use_wandb --wandb_name "ubiswas"\
         --population_yaml_path "${yml}" --population_size ${population_size} \

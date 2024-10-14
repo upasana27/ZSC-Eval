@@ -47,7 +47,7 @@ def parse_args(args, parser):
         action="store_true",
         help="While existing other agent like planning or human model, use an index to fix the main RL-policy agent.",
     )
-    parser.add_argument("--store_traj", default=False, action="store_true")
+    parser.add_argument("--store_traj", default=True, action="store_true")
     parser.add_argument("--stage", default=2, type=int)
     # population
     parser.add_argument(
@@ -91,7 +91,7 @@ def main(args):
     all_args = parse_args(args, parser)
 
     assert all_args.algorithm_name == "population"
-
+    all_args.cuda = False
     # cuda
     if all_args.cuda and torch.cuda.is_available():
         print("choose to use gpu...")
@@ -204,11 +204,15 @@ def main(args):
     population_agents = [name for name, _, _, _ in runner.policy.all_policies() if all_args.agent_name not in name]
     # logger.info(population_agents)
     # logger.info(len(population_agents))
+    print(all_args.n_eval_rollout_threads % (num_population_agents * 2))
     assert all_args.n_eval_rollout_threads % (num_population_agents * 2) == 0, num_population_agents
     assert all_args.eval_episodes % all_args.n_eval_rollout_threads == 0
     map_ea2p = dict()
     for e in range(all_args.n_eval_rollout_threads // 2):
         map_ea2p[(e, 0)] = all_args.agent_name
+        print(e)
+        print(population_agents)
+        print(map_ea2p)
         map_ea2p[(e, 1)] = population_agents[e % num_population_agents]
     for e in range(all_args.n_eval_rollout_threads // 2, all_args.n_eval_rollout_threads):
         map_ea2p[(e, 0)] = population_agents[e % num_population_agents]

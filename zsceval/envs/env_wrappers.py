@@ -528,6 +528,7 @@ class ShareSubprocDummyBatchVecEnv(ShareVecEnv):
         nenvs = len(env_fns)
         assert nenvs % dummy_batch_size == 0
         nbatchs = nenvs // dummy_batch_size
+        print("this is the prob", nbatchs)
         self.remotes, self.work_remotes = zip(*[Pipe() for _ in range(nbatchs)])
         self.dummy_batch_size = dummy_batch_size
         self.nbatchs = nbatchs
