@@ -776,7 +776,7 @@ def test_on_all():
             n = 75
         else:
             n = 36
-        dir = "/home/local/ASUAD/ubiswas2/ZSC-Eval/zsceval/scripts/overcooked/eval/traj_eval/" + str(layout) +"/" + str(agent0) + "/" + str(agent1) + "/eval-" + str(agent1) + "-S2-s" + str(n) +"-" + str(i)+ "/run1/trajs/"+ layout +"/"
+        dir = "/home/local/ASURITE/vpalod/ZSC-Eval/zsceval/scripts/overcooked/eval/traj_eval/" + str(layout) +"/" + str(agent0) + "/" + str(agent1) + "/eval-" + str(agent1) + "-S2-s" + str(n) +"-" + str(i)+ "/run1/trajs/"+ layout +"/"
         print(dir)
         for name in os.scandir(dir) :
             if name.is_file() and runs<=11:
@@ -857,6 +857,7 @@ def test_on_all():
 
 def main():
     diagnose()
+    #test_on_all()
 if __name__=="__main__":
     main()
 '''

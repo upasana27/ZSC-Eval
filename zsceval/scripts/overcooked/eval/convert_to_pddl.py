@@ -1,9 +1,22 @@
 '''
 We have the joint policy with (s_t,a_t). Map the a_t's to PDDL type actions with list of preconditions, additions and deletions.
+
+Agent1, Agent 2 (state) - Location, orientation, object
+
+def up(agent):
+    current_loc = agent[loc]
+    next_loc = current_loc + up_action
+    preconditions - next_loc is valid and empty
+    if all preconditions are true:
+        agent.state[loc] = next_loc
+        grid[next_loc] = A
+        grid[current_loc] = E
+    return pre, effects
+
 no_of_agents = agent_1, agent_2
 no_of_objects = has-object?,onion_dispenser, dish_dispenser, onion, dish, soup_dish, serving_station
 no_of_oven_states = is_oven, oven_empty, oven_1_onion, oven_2_onion, oven_3-onion, oven_cooking, oven_soup
-feature-loc = [is-empty, is-counter, has-agent[no_of_agents], has-object[no_of_objects], is_oven[no_of_oven_states]]
+
 --------- movement actions -------------
 def up(current state):
     loc_all = current_state.grid where loc_all is a 2D grid/array of feature-loc's at each location of the grid
