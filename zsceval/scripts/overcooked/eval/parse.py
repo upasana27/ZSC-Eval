@@ -1,22 +1,57 @@
-
 import pickle
 with open("traj_0_1.pkl", 'rb') as f:
         data = pickle.load(f)
 #print(len(data))
 
-k = 60
+k = 700
 for n in range(0,k , 4):
-    print(f"State {n//4 + 1}:")
-    print(f"State info: {data[n]}")
-    if n+1 < len(data):
-        print(f"Agent idx: {data[n+1]}")
-    if n+2 < len(data):
-        print("Player actions:")
-        for j, action in enumerate(data[n+2]):
-            print(f"Player {j}: {action}")
-    if n+3 < len(data):
-        print(f"Events: {data[n+3]}")
-    print("------------------------")
+    state_info = data[n]
+    # Check if state has any dish objects
+#     has_dish = False
+#     if 'objects' in state_info:
+#         for obj in state_info['objects']:
+#             if obj['name'] == 'dish':
+#                 has_dish = True
+#                 break
+    
+    if True:
+        print(f"\nState {n//4 + 1}:")
+        print(f"State info: {state_info}")
+        if n+1 < len(data):
+            print(f"Agent idx: {data[n+1]}")
+        if n+2 < len(data):
+            print("Player actions:")
+            print(data[n+2])
+        if n+3 < len(data):
+            print(f"Events: {data[n+3]}")
+        print("------------------------")
+
+#     print("------------------------")
+
+    # First check the events
+#     if n+3 < len(data):
+#         events = data[n+3]
+#         has_soup_event = False
+#         for event in events:
+#             if (event.get('SOUP_PICKUP', 0) == 1 or 
+#                 event.get('put_soup_on_X', 0) == 1 or 
+#                 event.get('pickup_soup_from_X', 0) == 1 or 
+#                 event.get('delivery', 0) == 1):
+#                 has_soup_event = True
+#                 break
+        
+#         if has_soup_event:
+#             print(f"\nState {n//4 + 1}:")
+#             print(f"State info: {state_info}")
+#             if n+1 < len(data):
+#                 print(f"Agent idx: {data[n+1]}")
+#             if n+2 < len(data):
+#                 print("Player actions:")
+#                 for j, action in enumerate(data[n+2]):
+#                     print(f"Player {j}: {action}")
+#             print(f"Events: {events}")
+#             print("------------------------")
+
 print("\n \n")
 p1_action_traj = []
 p2_action_traj = []
