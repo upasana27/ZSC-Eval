@@ -1,3 +1,54 @@
+# Global counters for object IDs
+soup_counter = 0
+onion_counter = 0
+dish_counter = 0
+
+class Object:
+    def __init__(self, name, position, state=None, id=None):
+        self.name = name
+        self.position = position
+        self.state = state
+        
+        # Generate ID if not provided
+        if id is None:
+            global soup_counter, onion_counter, dish_counter
+            if name == 'soup':
+                soup_counter += 1
+                self.id = f'soup_{soup_counter}'
+            elif name == 'onion':
+                onion_counter += 1 
+                self.id = f'onion_{onion_counter}'
+            elif name == 'dish':
+                dish_counter += 1
+                self.id = f'dish_{dish_counter}'
+            else:
+                raise ValueError(f"Unknown object name: {name}")
+        else:
+            self.id = id
+
+def generate_object_id(name):
+    """
+    Generate a unique ID for an object based on its name.
+    Args:
+        name (str): Name of the object ('soup', 'onion', or 'dish')
+    Returns:
+        str: Unique ID in the format 'name_number'
+    """
+    global soup_counter, onion_counter, dish_counter
+    if name == 'soup':
+        soup_counter += 1
+        return f'soup_{soup_counter}'
+    elif name == 'onion':
+        onion_counter += 1
+        return f'onion_{onion_counter}'
+    elif name == 'dish':
+        dish_counter += 1
+        return f'dish_{dish_counter}'
+    else:
+        raise ValueError(f"Unknown object name: {name}")
+
+
+
 def build_terrain_grid(layout_list):
     terrain_grid = []
     for row in layout_list:
@@ -147,6 +198,341 @@ def record_grid_snapshot(grid, timestep, snapshots):
     
     snapshots[timestep] = snapshot
 
+def get_preconditions_for_action(action_type, pos, target_pos, agent_key, current_held, target_cell):
+    """
+    Get preconditions for a given action type.
+    Args:
+        action_type: Type of action being performed
+        pos: Current position of the agent
+        target_pos: Target position for the action
+        agent_key: Key for the agent in the grid
+        current_held: Currently held object by the agent
+        target_cell: Target cell information
+    Returns:
+        dict: Preconditions for the action
+    """
+    preconditions = {}
+    
+    if action_type == "pickup_onion_from_dispenser":
+        preconditions = {
+            pos: {
+                agent_key: {
+                    'hand_empty': True,
+                    'held_objects': None
+                }
+            },
+            target_pos: {
+                'terrain': "onion_dispenser",
+            }
+        }
+    elif action_type == "pickup_dish_from_dispenser":
+        preconditions = {
+            pos: {
+                agent_key: {
+                    'hand_empty': True,
+                    'held_objects': None
+                }
+            },
+            target_pos: {
+                'terrain': "dish_dispenser",
+            }
+        }
+    elif action_type == "pickup_onion_from_counter":
+        preconditions = {
+            pos: {
+                agent_key: {
+                    'hand_empty': True,
+                    'held_objects': None
+                }   
+            },
+            target_pos: {
+                'terrain': 'counter',
+                'object': {
+                    'name': 'onion',
+                    'position': target_pos,
+                    'state': None
+                }
+            }
+        }
+    elif action_type == "pickup_dish_from_counter":
+        preconditions = {
+            pos: {
+                agent_key: {
+                    'hand_empty': True,
+                    'held_objects': None
+                }   
+            },
+            target_pos: {
+                'terrain': 'counter',
+                'object': {
+                    'name': 'dish',
+                    'position': target_pos,
+                    'state': None
+                }
+            }
+        }
+    elif action_type == "put_onion_on_counter":
+        preconditions = {
+            pos: {
+                agent_key: {
+                    'hand_empty': False,
+                    'held_objects': {
+                        'name': 'onion',
+                        'position': pos,
+                        'state': None
+                    }
+                }
+            },
+            target_pos: {
+                'terrain': 'counter',
+                'object': None
+            }
+        }
+    elif action_type == "put_dish_on_counter":
+        preconditions = {
+            pos: {
+                agent_key: {
+                    'hand_empty': False,
+                    'held_objects': {
+                        'name': 'dish',
+                        'position': pos,
+                        'state': None
+                    }
+                }
+            },
+            target_pos: {
+                'terrain': 'counter',
+                'object': None
+            }
+        }
+    elif action_type == "put_onion_in_pot_0_onion":
+        preconditions = {
+            pos: {
+                agent_key: {
+                    'hand_empty': False,
+                    'held_objects': {
+                        'name': 'onion',
+                        'position': pos,
+                        'state': None
+                    }
+                }
+            },
+            target_pos: {
+                'terrain': 'pot',
+                'object': None  # Pot must be empty
+            }
+        }
+    elif action_type == "put_onion_in_pot_1_onion":
+        preconditions = {
+            pos: {
+                agent_key: {
+                    'hand_empty': False,
+                    'held_objects': {
+                        'name': 'onion',
+                        'position': pos,
+                        'state': None
+                    }
+                }
+            },
+            target_pos: {
+                'terrain': 'pot',
+                'object': {
+                    'name': 'soup',
+                    'position': target_pos,
+                    'state': ['onion', 1, 0]  # Pot must have 1 onion
+                }
+            }
+        }
+    elif action_type == "put_onion_in_pot_2_onion":
+        preconditions = {
+            pos: {
+                agent_key: {
+                    'hand_empty': False,
+                    'held_objects': {
+                        'name': 'onion',
+                        'position': pos,
+                        'state': None
+                    }
+                }
+            },
+            target_pos: {
+                'terrain': 'pot',
+                'object': {
+                    'name': 'soup',
+                    'position': target_pos,
+                    'state': ['onion', 2, 0]  # Pot must have 2 onions
+                }
+            }
+        }
+    elif action_type == "pickup_soup_from_pot":
+        preconditions = {
+            pos: {
+                agent_key: {
+                    'hand_empty': False,
+                    'held_objects': {
+                        'name': 'dish',
+                        'position': pos,
+                        'state': None
+                    }
+                }
+            },
+            target_pos: {
+                'terrain': 'pot',
+                'object': {
+                    'name': 'soup',
+                    'position': target_pos,
+                    'state': ('onion', 3, 20)  # Pot must have fully cooked soup
+                }
+            }
+        }
+    elif action_type == "put_soup_on_counter":
+        preconditions = {
+            pos: {
+                agent_key: {
+                    'hand_empty': False,
+                    'held_objects': {
+                        'name': 'soup',
+                        'position': pos,
+                        'state': ('onion', 3, 20)
+                    }
+                }
+            },
+            target_pos: {
+                'terrain': 'counter',
+                'object': None  # Counter must be empty
+            }
+        }
+    elif action_type == "pickup_soup_from_counter":
+        preconditions = {
+            pos: {
+                agent_key: {
+                    'hand_empty': True,
+                    'held_objects': None
+                }
+            },
+            target_pos: {
+                'terrain': 'counter',
+                'object': {
+                    'name': 'soup',
+                    'position': target_pos,
+                    'state': ('onion', 3, 20)
+                }
+            }
+        }
+    elif action_type == "deliver_soup":
+        preconditions = {
+            pos: {
+                agent_key: {
+                    'hand_empty': False,
+                    'held_objects': {
+                        'name': 'soup',
+                        'position': pos,
+                        'state': ('onion', 3, 20)
+                    }
+                }
+            },
+            target_pos: {
+                'terrain': 'delivery'  # Target must be delivery station
+            }
+        }
+    
+    return preconditions
+
+def can_perform_action(action_type, current_held, target_cell):
+    """
+    Determine if an action can be performed based on the current state.
+    Args:
+        action_type: Type of action being performed
+        current_held: Currently held object by the agent
+        target_cell: Target cell information
+    Returns:
+        bool: Whether the action can be performed
+    """
+    if action_type == 'pickup_onion_from_dispenser':
+        return (
+            current_held is None and
+            target_cell['terrain'] == 'onion_dispenser'
+        )
+    elif action_type == 'pickup_dish_from_dispenser':
+        return (
+            current_held is None and
+            target_cell['terrain'] == 'dish_dispenser'
+        )
+    elif action_type == 'pickup_onion_from_counter':
+        return (
+            current_held is None and
+            target_cell['object'] is not None and
+            target_cell['object']['name'] == 'onion'
+        )
+    elif action_type == 'pickup_dish_from_counter':
+        return (
+            current_held is None and
+            target_cell['object'] is not None and
+            target_cell['object']['name'] == 'dish'
+        )
+    elif action_type == 'put_onion_on_counter':
+        return (
+            current_held is not None and
+            current_held['name'] == 'onion' and
+            target_cell['terrain'] == 'counter' and
+            target_cell['object'] is None
+        )
+    elif action_type == 'put_dish_on_counter':
+        return (
+            current_held is not None and
+            current_held['name'] == 'dish' and
+            target_cell['terrain'] == 'counter' and
+            target_cell['object'] is None
+        )
+    elif action_type == 'put_soup_on_counter':
+        return (
+            current_held is not None and
+            current_held['name'] == 'soup' and
+            current_held['state'] == ('onion', 3, 20) and
+            target_cell['terrain'] == 'counter' and
+            target_cell['object'] is None
+        )
+    elif action_type == 'pickup_soup_from_counter':
+        return (
+            current_held is None and
+            target_cell['terrain'] == 'counter' and
+            target_cell['object'] is not None and
+            target_cell['object']['name'] == 'soup' and
+            target_cell['object']['state'] == ('onion', 3, 20)
+        )
+    elif action_type == 'deliver_soup':
+        return (
+            current_held is not None and
+            current_held['name'] == 'soup' and
+            target_cell['terrain'] == 'delivery'
+        )
+    elif action_type == 'pickup_soup_from_pot':
+        print(f"pickup soup from pot")
+        print(f"target_cell: {target_cell}")
+        return (
+            current_held is not None and
+            current_held['name'] == 'dish' and
+            target_cell['terrain'] == 'pot' and
+            target_cell['object'] is not None and
+            target_cell['object']['name'] == 'soup' and
+            target_cell['object']['state'][2] == 20
+        )
+    elif action_type in ['put_onion_in_pot_0_onion', 'put_onion_in_pot_1_onion', 'put_onion_in_pot_2_onion']:
+        # Get current soup state
+        current_soup = target_cell['object']
+        onion_count = 0
+        if current_soup is not None and current_soup['name'] == 'soup':
+            onion_count = current_soup['state'][1]
+        
+        return (
+            current_held is not None and
+            current_held['name'] == 'onion' and
+            target_cell['terrain'] == 'pot' and
+            onion_count < 3  # Can't put more than 3 onions in pot
+        )
+    
+    return False
+
 def update_grid_for_move_and_record(agent_idx, from_pos, to_pos, timestep, grid, snapshots=None, action=None):
     """
     Update the grid for an agent's move and record the snapshot if snapshots dict is provided.
@@ -187,11 +573,18 @@ def update_grid_for_move_and_record(agent_idx, from_pos, to_pos, timestep, grid,
     
     # Check if preconditions are met
     to_cell = grid[ty][tx]
+
+    
     can_move = (
         to_cell['terrain'] == 'floor' and
         not to_cell[f'Agent_{other_agent}']['is_present'] and
         to_cell['object'] is None
     )
+
+    # if timestep == 5:
+    #     print(f"Agent {agent_idx} is moving from {from_pos} to {to_pos}")
+    #     print(f"to_cell: {to_cell}")
+    #     print(f"can_move: {can_move}")
     
     # Only update orientation if there's actual movement (not 0,0)
     if action != 'interact' and action != (0, 0):
@@ -210,12 +603,14 @@ def update_grid_for_move_and_record(agent_idx, from_pos, to_pos, timestep, grid,
         if held_obj is not None:
             held_obj = held_obj.copy()  # Create a copy to avoid reference issues
             held_obj['position'] = to_pos  # Update position to new location
-        grid[ty][tx][agent_key]['held_objects'] = held_obj
         grid[fy][fx][agent_key]['held_objects'] = None
+        grid[ty][tx][agent_key]['held_objects'] = held_obj
+        
         
         # Update hand_empty status
-        grid[ty][tx][agent_key]['hand_empty'] = held_obj is None
         grid[fy][fx][agent_key]['hand_empty'] = True
+        grid[ty][tx][agent_key]['hand_empty'] = held_obj is None
+        
         
         # Update is_empty status for both cells
         grid[fy][fx]['is_empty'] = not (grid[fy][fx]['Agent_0']['is_present'] or grid[fy][fx]['Agent_1']['is_present'] or grid[fy][fx]['object'])
@@ -256,7 +651,7 @@ def update_grid_for_move_and_record(agent_idx, from_pos, to_pos, timestep, grid,
         'effects': effects
     }
     
-    return action_log
+    return action_log, grid
 
 def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshots=None, next_state=None):
     """
@@ -295,33 +690,20 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
         target_cell = grid[y][x-1]
         target_pos = (x-1, y)
     
-    # Update cooking state for all pots in the grid
-    for row in grid:
-        for cell in row:
-            if cell['terrain'] == 'pot' and cell['object'] is not None:
-                soup = cell['object']
-                if soup['name'] == 'soup' and soup['state'][1] == 3:  # If pot has 3 onions
-                    cooking_time = soup['state'][2]
-                    if cooking_time < 20:  # Only cook if not fully cooked
-                        soup['state'] = ('onion', 3, cooking_time + 1)
+
     
     # Determine the type of interact action based on current and next state
     action_type = None
     current_held = grid[y][x][agent_key]['held_objects']
-    preconditions = {}
+    #print(current_held)
     effects = {}
 
-    #print("Agent position: ", pos)
-    #print("Agent key: ", agent_key)
-    #print("Orientation: ", orientation)
-    #print("target_Cell position: ", target_pos)
-    #print("target_cell: ", target_cell)
-    #print("Target cell terrain: ", target_cell['terrain'])
     if next_state is not None:
         next_player = next_state['players'][agent_idx]
         next_held = next_player['held_object']
+
+       
         
-        # Check for pickup actions
         if current_held is None and next_held is not None:
             if target_cell['terrain'] == 'onion_dispenser':
                 action_type = 'pickup_onion_from_dispenser'
@@ -336,6 +718,8 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
         
         # Check for put actions
         elif current_held is not None and next_held is None:
+           # if timestep in [14,15,16,17]:
+                #print(f"Agent {agent_idx} is holding {current_held['name']}")
             if target_cell['terrain'] == 'counter' and target_cell['object'] is None:
                 if current_held['name'] == 'onion':
                     action_type = 'put_onion_on_counter'
@@ -344,8 +728,10 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                 elif current_held['name'] == 'soup':
                     action_type = 'put_soup_on_counter'
             elif target_cell['terrain'] == 'pot':
+                #print(f"target pos: {target_pos}")
                 if current_held['name'] == 'onion':
                     if target_cell['object'] is None:
+                        #print(f"time step: {timestep}")
                         action_type = 'put_onion_in_pot_0_onion'
                     elif target_cell['object']['name'] == 'soup' and target_cell['object']['state'][1] == 1:
                         action_type = 'put_onion_in_pot_1_onion'
@@ -353,331 +739,44 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                         action_type = 'put_onion_in_pot_2_onion'
             elif target_cell['terrain'] == 'delivery' and current_held['name'] == 'soup':
                 action_type = 'deliver_soup'
+                print(f"time step: {timestep}")
+                print(f"SOUPPPP")
         
         elif current_held is not None and next_held is not None:
             if current_held['name'] == 'dish' and next_held['name'] == 'soup':
                 action_type = 'pickup_soup_from_pot'
+                print(f"time step: {timestep}")
+                print(f"pickup soup from pot")
 
+        #if action_type is None:
+            #print(f"time step: {timestep}")
 
-        if action_type== "pickup_onion_from_dispenser":
-            preconditions = {
-                pos: {
-                    agent_key: {
-                        'hand_empty': True,
-                        'held_objects': None
-                    }
-                },
-                target_pos: {
-                    'terrain': "onion_dispenser",
-                }
-            }
-        elif action_type == "pickup_dish_from_dispenser":
-            preconditions = {
-                pos: {
-                    agent_key: {
-                        'hand_empty': True,
-                        'held_objects': None
-                    }
-                },
-                target_pos: {
-                    'terrain': "dish_dispenser",
-                }
-            }
-        elif action_type == "pickup_onion_from_counter":
-            preconditions = {
-                pos: {
-                    agent_key: {
-                        'hand_empty': True,
-                        'held_objects': None
-                    }   
-                },
-                target_pos: {
-                    'terrain': 'counter',
-                    'object': {
-                        'name': 'onion',
-                        'position': target_pos,
-                        'state': None
-                    }
-                }
-            }
-        elif action_type == "pickup_dish_from_counter":
-            preconditions = {
-                pos: {
-                    agent_key: {
-                        'hand_empty': True,
-                        'held_objects': None
-                    }   
-                },
-                target_pos: {
-                    'terrain': 'counter',
-                    'object': {
-                        'name': 'dish',
-                        'position': target_pos,
-                        'state': None
-                    }
-                }
-            }
-        elif action_type == "put_onion_on_counter":
-            preconditions = {
-                pos: {
-                    agent_key: {
-                        'hand_empty': False,
-                        'held_objects': {
-                            'name': 'onion',
-                            'position': pos,
-                            'state': None
-                        }
-                    }
-                },
-                target_pos: {
-                    'terrain': 'counter',
-                    'object': None
-                }
-            }
-        elif action_type == "put_dish_on_counter":
-            preconditions = {
-                pos: {
-                    agent_key: {
-                        'hand_empty': False,
-                        'held_objects': {
-                            'name': 'dish',
-                            'position': pos,
-                            'state': None
-                        }
-                    }
-                },
-                target_pos: {
-                    'terrain': 'counter',
-                    'object': None
-                }
-            }
-        elif action_type == "put_onion_in_pot_0_onion":
-            preconditions = {
-                pos: {
-                    agent_key: {
-                        'hand_empty': False,
-                        'held_objects': {
-                            'name': 'onion',
-                            'position': pos,
-                            'state': None
-                        }
-                    }
-                },
-                target_pos: {
-                    'terrain': 'pot',
-                    'object': None  # Pot must be empty
-                }
-            }
-            
-        elif action_type == "put_onion_in_pot_1_onion":
-            preconditions = {
-                pos: {
-                    agent_key: {
-                        'hand_empty': False,
-                        'held_objects': {
-                            'name': 'onion',
-                            'position': pos,
-                            'state': None
-                        }
-                    }
-                },
-                target_pos: {
-                    'terrain': 'pot',
-                    'object': {
-                        'name': 'soup',
-                        'position': target_pos,
-                        'state': ['onion', 1, 0]  # Pot must have 1 onion
-                    }
-                }
-            }
-            
-        elif action_type == "put_onion_in_pot_2_onion":
-            preconditions = {
-                pos: {
-                    agent_key: {
-                        'hand_empty': False,
-                        'held_objects': {
-                            'name': 'onion',
-                            'position': pos,
-                            'state': None
-                        }
-                    }
-                },
-                target_pos: {
-                    'terrain': 'pot',
-                    'object': {
-                        'name': 'soup',
-                        'position': target_pos,
-                        'state': ['onion', 2, 0]  # Pot must have 2 onions
-                    }
-                }
-            }
-            
-        elif action_type == "pickup_soup_from_pot":
-            preconditions = {
-                pos: {
-                    agent_key: {
-                        'hand_empty': False,
-                        'held_objects': {
-                            'name': 'dish',
-                            'position': pos,
-                            'state': None
-                        }
-                    }
-                },
-                target_pos: {
-                    'terrain': 'pot',
-                    'object': {
-                        'name': 'soup',
-                        'position': target_pos,
-                        'state': ('onion', 3, 20)  # Pot must have fully cooked soup
-                    }
-                }
-            }
-        
-        elif action_type == "put_soup_on_counter":
-            preconditions = {
-                pos: {
-                    agent_key: {
-                        'hand_empty': False,
-                        'held_objects': {
-                            'name': 'soup',
-                            'position': pos,
-                            'state': ('onion', 3, 20)
-                        }
-                    }
-                },
-                target_pos: {
-                    'terrain': 'counter',
-                    'object': None  # Counter must be empty
-                }
-            }
-            
-        elif action_type == "pickup_soup_from_counter":
-            preconditions = {
-                pos: {
-                    agent_key: {
-                        'hand_empty': True,
-                        'held_objects': None
-                    }
-                },
-                target_pos: {
-                    'terrain': 'counter',
-                    'object': {
-                        'name': 'soup',
-                        'position': target_pos,
-                        'state': ('onion', 3, 20)
-                    }
-                }
-            }
-        
-        elif action_type == "deliver_soup":
-            preconditions = {
-                pos: {
-                    agent_key: {
-                        'hand_empty': False,
-                        'held_objects': {
-                            'name': 'soup',
-                            'position': pos,
-                            'state': ('onion', 3, 20)
-                        }
-                    }
-                },
-                target_pos: {
-                    'terrain': 'delivery'  # Target must be delivery station
-                }
-            }
-        
-        # Check if action is possible based on type
-        can_interact = False
-        if action_type == 'pickup_onion_from_dispenser':
-            can_interact = (
-                current_held is None and
-                target_cell['terrain'] == 'onion_dispenser'
-            )
-        elif action_type == 'pickup_dish_from_dispenser':
-            can_interact = (
-                current_held is None and
-                target_cell['terrain'] == 'dish_dispenser'
-            )
-        elif action_type == 'pickup_soup_from_pot':
-            can_interact = (
-                current_held is not None and
-                current_held['name'] == 'dish' and
-                target_cell['terrain'] == 'pot' and
-                target_cell['object'] is not None and
-                target_cell['object']['name'] == 'soup' and
-                target_cell['object']['state'] == ('onion', 3, 20)
-            )
-        elif action_type == 'pickup_onion_from_counter':
-            can_interact = (
-                current_held is None and
-                target_cell['object']['name'] == 'onion'
-            )
-        elif action_type == 'pickup_dish_from_counter':
-            can_interact = (
-                current_held is None and
-                target_cell['object']['name'] == 'dish'
-            )
-        elif action_type == 'put_onion_on_counter':
-            can_interact = (
-                current_held is not None and
-                current_held['name'] == 'onion' and
-                target_cell['terrain'] == 'counter' and
-                target_cell['object'] is None
-            )
-        elif action_type == 'put_dish_on_counter':
-            can_interact = (
-                current_held is not None and
-                current_held['name'] == 'dish' and
-                target_cell['terrain'] == 'counter' and
-                target_cell['object'] is None
-            )
-        elif action_type == 'put_soup_on_counter':
-            can_interact = (
-                current_held is not None and
-                current_held['name'] == 'soup' and
-                current_held['state'] == ('onion', 3, 20) and
-                target_cell['terrain'] == 'counter' and
-                target_cell['object'] is None
-            )
-        elif action_type == 'pickup_soup_from_counter':
-            can_interact = (
-                current_held is None and
-                target_cell['terrain'] == 'counter' and
-                target_cell['object'] is not None and
-                target_cell['object']['name'] == 'soup' and
-                target_cell['object']['state'] == ('onion', 3, 20)
-            )
-        elif action_type == 'deliver_soup':
-            can_interact = (
-                current_held is not None and
-                current_held['name'] == 'soup' and
-                current_held['state'] == ('onion', 3, 20) and
-                target_cell['terrain'] == 'delivery'
-            )
-        elif action_type in ['put_onion_in_pot_0_onion', 'put_onion_in_pot_1_onion', 'put_onion_in_pot_2_onion']:
-            # Get current soup state
-            current_soup = target_cell['object']
-            onion_count = 0
-            if current_soup is not None and current_soup['name'] == 'soup':
-                onion_count = current_soup['state'][1]
-            
-            can_interact = (
-                current_held is not None and
-                current_held['name'] == 'onion' and
-                target_cell['terrain'] == 'pot' and
-                onion_count < 3  # Can't put more than 3 onions in pot
-            )
-        
+        # Get preconditions for the action
+        preconditions = get_preconditions_for_action(
+            action_type,
+            pos,
+            target_pos,
+            agent_key,
+            current_held,
+            target_cell
+        )
+
+        # Check if action can be performed
+        can_interact = can_perform_action(action_type, current_held, target_cell)
+
+        if timestep == 155:
+            print(f"can_interact: {can_interact} {action_type} {current_held} {target_pos}")
+       # print(f"can_interact: {can_interact} {action_type} {current_held} {target_pos}")
         if can_interact:
             # Update grid based on action type
             if action_type in ['pickup_onion_from_dispenser', 'pickup_dish_from_dispenser']:
                 # Update agent's held object with complete state
+                
                 held_obj = {
                     'name': 'onion' if action_type == 'pickup_onion_from_dispenser' else 'dish',
                     'position': pos,
-                    'state': None  # Default state for picked up items
+                    'state': None,
+                    'id': generate_object_id('onion' if action_type == 'pickup_onion_from_dispenser' else 'dish')  # Generate unique ID
                 }
                 grid[y][x][agent_key]['held_objects'] = held_obj
                 grid[y][x][agent_key]['hand_empty'] = False
@@ -692,25 +791,21 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                 }
                 
             elif action_type in ['pickup_onion_from_counter', 'pickup_dish_from_counter']:
-                # Update agent's held object with complete state
-                held_obj = {
-                    'name': 'onion' if action_type == 'pickup_onion_from_counter' else 'dish',
-                    'position': pos,
-                    'state': None  # Default state for picked up items
-                }
-                grid[y][x][agent_key]['held_objects'] = held_obj
+           
+                picked_obj = target_cell['object']
+                grid[y][x][agent_key]['held_objects'] = picked_obj
                 grid[y][x][agent_key]['hand_empty'] = False
                 
                 # Remove object from target cell if it's not a dispenser
-                if target_cell['object'] is not None:
-                    target_cell['object'] = None
-                    target_cell['is_empty'] = True
+                
+                target_cell['object'] = None
+                target_cell['is_empty'] = True
 
                 effects = {
                     pos: {
                         agent_key: {
                             'hand_empty': False,
-                            'held_objects': held_obj
+                            'held_objects': picked_obj
                         }
                     },
                     target_pos: {
@@ -727,6 +822,9 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                 # Place object on counter
                 target_cell['object'] = current_held
                 target_cell['is_empty'] = False
+                # print(f"Target Pos: {target_pos}")
+                # print(f"action_type: {action_type}")
+                # print("puttttt")
 
                 effects = {
                     pos: {
@@ -744,35 +842,34 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
             elif action_type in ['put_onion_in_pot_0_onion', 'put_onion_in_pot_1_onion', 'put_onion_in_pot_2_onion']:
                 # Get current soup state
                 current_soup = target_cell['object']
-                onion_count = 0
                 if current_soup is not None and current_soup['name'] == 'soup':
+                    #print(f"current_soup: {current_soup}")
+                    #print("\n\n\n\n")
                     onion_count = current_soup['state'][1]
+                    onion_count += 1
+                    onion_array = current_soup['state'][0]
+                    #print(current_soup)
+                    onion_array.append(current_held)
+                    current_soup['state'] = (onion_array, onion_count, 0)
                 
-                # can_interact = (
-                #     current_held is not None and
-                #     current_held['name'] == 'onion' and
-                #     target_cell['terrain'] == 'pot' and
-                #     onion_count < 3  # Can't put more than 3 onions in pot
-                # )
+                else:
+                    #print(f"current_held: {current_held}")
+                    #print("\n\n\n\n")
+                    soup_state = ([current_held], 1, 0)
+                    target_cell['object'] = {
+                        'name': 'soup',
+                        'position': target_pos,
+                        'state': soup_state  # Cooking starts only when onions = 3
+                    }
+                    #print(f"target_cell: {target_cell}")
+                    #print("\n\n\n\n")
 
-                # if can_interact:
-                    # Clear agent's held object
+
                 grid[y][x][agent_key]['held_objects'] = None
                 grid[y][x][agent_key]['hand_empty'] = True
                 
-                # Get current soup state
-                current_soup = target_cell['object']
-                onion_count = 0
-                if current_soup is not None and current_soup['name'] == 'soup':
-                    onion_count = current_soup['state'][1]
                 
-                # Update pot state
-                new_onion_count = onion_count + 1
-                target_cell['object'] = {
-                    'name': 'soup',
-                    'position': target_pos,
-                    'state': ('onion', new_onion_count, 0)  # Cooking starts only when onions = 3
-                }
+        
                 target_cell['is_empty'] = False
 
                 effects = {
@@ -789,22 +886,8 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                 }
             
             elif action_type == 'pickup_soup_from_pot':
-                # can_interact = (
-                #     current_held is not None and
-                #     current_held['name'] == 'dish' and
-                #     target_cell['terrain'] == 'pot' and
-                #     target_cell['object'] is not None and
-                #     target_cell['object']['name'] == 'soup' and
-                #     target_cell['object']['state'] == ('onion', 3, 20)
-                # )
-
-                # if can_interact:
-                    # Update agent's held object to soup
-                held_obj = {
-                    'name': 'soup',
-                    'position': pos,
-                    'state': ('onion', 3, 20)
-                }
+           
+                held_obj = target_cell['object']
                 grid[y][x][agent_key]['held_objects'] = held_obj
                 grid[y][x][agent_key]['hand_empty'] = False
                 
@@ -826,26 +909,16 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                 }
             
             elif action_type == 'put_soup_on_counter':
-                # can_interact = (
-                #     current_held is not None and
-                #     current_held['name'] == 'soup' and
-                #     current_held['state'] == ('onion', 3, 20) and
-                #     target_cell['terrain'] == 'counter' and
-                #     target_cell['object'] is None
-                # )
-
-                # if can_interact:
-                    # Clear agent's held object
+                
+                held_obj = current_held
+                target_cell['object'] = held_obj
+                
+                target_cell['is_empty'] = False
                 grid[y][x][agent_key]['held_objects'] = None
                 grid[y][x][agent_key]['hand_empty'] = True
                 
                 # Place soup on counter
-                target_cell['object'] = {
-                    'name': 'soup',
-                    'position': target_pos,
-                    'state': ('onion', 3, 20)
-                }
-                target_cell['is_empty'] = False
+             
 
                 effects = {
                     pos: {
@@ -861,21 +934,9 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                 }
             
             elif action_type == 'pickup_soup_from_counter':
-                # can_interact = (
-                #     current_held is None and
-                #     target_cell['terrain'] == 'counter' and
-                #     target_cell['object'] is not None and
-                #     target_cell['object']['name'] == 'soup' and
-                #     target_cell['object']['state'] == ('onion', 3, 20)
-                # )
-
-                # if can_interact:
+                
                     # Update agent's held object to soup
-                held_obj = {
-                    'name': 'soup',
-                    'position': pos,
-                    'state': ('onion', 3, 20)
-                }
+                held_obj = target_cell['object']
                 grid[y][x][agent_key]['held_objects'] = held_obj
                 grid[y][x][agent_key]['hand_empty'] = False
                 
@@ -897,14 +958,7 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                 }
             
             elif action_type == 'deliver_soup':
-                # can_interact = (
-                #     current_held is not None and
-                #     current_held['name'] == 'soup' and
-                #     current_held['state'] == ('onion', 3, 20) and
-                #     target_cell['terrain'] == 'delivery'
-                # )
-
-                # if can_interact:
+             
                     # Clear agent's held object
                 grid[y][x][agent_key]['held_objects'] = None
                 grid[y][x][agent_key]['hand_empty'] = True
@@ -917,22 +971,7 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                         }
                     }
                 }
-            
-            # Update effects
-            # effects = {
-            #     pos: {
-            #         'terrain': grid[y][x]['terrain'],
-            #         'Agent_0': grid[y][x]['Agent_0'],
-            #         'Agent_1': grid[y][x]['Agent_1'],
-            #         'object': grid[y][x]['object'],
-            #         'is_empty': grid[y][x]['is_empty']
-            #     },
-            #     target_pos: {
-            #         'terrain': target_cell['terrain'],
-            #         'object': target_cell['object'],
-            #         'is_empty': target_cell['is_empty']
-            #     }
-            # }
+        
     else:
         effects = {}
     
@@ -951,7 +990,7 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
         'effects': effects
     }
     
-    return action_log
+    return action_log, grid
 
 def construct_grid_from_state(state_info, terrain_grid):
     """
@@ -1031,13 +1070,27 @@ def process_actions(step, grid, next_state=None):
      next_state_info = next_state['State_info']
     
     if step['Player_actions'] is not None:
+        
+        # First collect all planned moves
+        planned_moves = {}
         for player_idx, action in enumerate(step['Player_actions']):
-            # Get current position
             current_pos = state_info['players'][player_idx]['position']
-            
+            if action != 'interact':
+                dx, dy = action
+                next_pos = (current_pos[0] + dx, current_pos[1] + dy)
+                planned_moves[player_idx] = (current_pos, next_pos)
+
+        # Check for conflicts
+        next_positions = [move[1] for move in planned_moves.values()]
+        has_conflict = len(next_positions) != len(set(next_positions))
+
+        # Process actions, skipping conflicting moves
+        for player_idx, action in enumerate(step['Player_actions']):
+            current_pos = state_info['players'][player_idx]['position']
+
             if action == 'interact':
                 # Handle interact action using new function
-                action_log = update_grid_for_interact_and_record(
+                action_log, grid = update_grid_for_interact_and_record(
                     agent_idx=player_idx,
                     pos=current_pos,
                     timestep=state_info['timestep'],
@@ -1047,23 +1100,29 @@ def process_actions(step, grid, next_state=None):
                 action_logs.append(action_log)
             else:
                 # Handle movement action - action is just (dx, dy)
+                if state_info['timestep'] in [85,86,87,88,89,90,91,92,93,94]:
+                    print(f"Agent {player_idx} is moving from {current_pos} to {action}")
                 dx, dy = action
                 next_pos = (current_pos[0] + dx, current_pos[1] + dy)
                 
-                # Update grid and get preconditions/effects
-                action_log = update_grid_for_move_and_record(
-                    agent_idx=player_idx,
-                    from_pos=current_pos,
-                    to_pos=next_pos,
-                    timestep=state_info['timestep'],
-                    grid=grid,
-                    action=action
-                )
-                action_logs.append(action_log)
+                # Only execute move if there's no conflict
+                if not has_conflict or next_pos not in [move[1] for idx, move in planned_moves.items() if idx != player_idx]:
+                    # Update grid and get preconditions/effects
+                    action_log, grid = update_grid_for_move_and_record(
+                        agent_idx=player_idx,
+                        from_pos=current_pos,
+                        to_pos=next_pos,
+                        timestep=state_info['timestep'],
+                        grid=grid,
+                        action=action
+                    )
+                    action_logs.append(action_log)
+    # print("Grid at timestep: ", state_info['timestep'])
+    # print_occupancy(grid)
     
     return grid, action_logs
 
-def parse_trajectory_step(step, terrain_grid, next_state=None):
+def parse_trajectory_step(step, terrain_grid, next_state=None, grid=None):
     """
     Parse a single trajectory step into a grid snapshot.
     Args:
@@ -1074,7 +1133,8 @@ def parse_trajectory_step(step, terrain_grid, next_state=None):
         action_logs: List of action logs containing preconditions and effects
     """
     # First construct the grid from state
-    grid = construct_grid_from_state(step['State_info'], terrain_grid)
+    if grid is None:
+        grid = construct_grid_from_state(step['State_info'], terrain_grid)
     
     # Then process actions and update grid
     grid, action_logs = process_actions(step, grid, next_state)
@@ -1091,17 +1151,53 @@ def parse_trajectory(trajectory, terrain_grid):
         snapshots: Dictionary of grid snapshots keyed by timestep
         action_logs: Dictionary of action logs keyed by timestep
     """
-    snapshots = {}
-    action_logs = {}
+    snapshots = []
+    action_logs = []
     
     for i in range(len(trajectory)):                
         step = trajectory[i]
         next_state = trajectory[i+1] if i+1 < len(trajectory) else None
         timestep = step['State_info']['timestep']
-        grid, step_action_logs = parse_trajectory_step(step, terrain_grid, next_state)
-        #print("Grid: ", grid[4][4])
-        snapshots[timestep] = grid
-        action_logs[timestep] = step_action_logs
+        if i == 0:
+            grid = None
+        else:               # Update cooking state for all pots in the grid
+            for row in grid:
+                for cell in row:
+                    if cell['terrain'] == 'pot' and cell['object'] is not None:
+                        soup = cell['object']
+                        if soup['name'] == 'soup' and soup['state'][1] == 3:  # If pot has 3 onions
+                            cooking_time = soup['state'][2]
+                            if cooking_time < 20:  # Only cook if not fully cooked
+                                # Create new state tuple with updated cooking time
+                                new_state = (soup['state'][0], soup['state'][1], cooking_time + 1)
+                                soup['state'] = new_state
+
+        grid, step_action_logs = parse_trajectory_step(step, terrain_grid, next_state, grid)
+        #if grid is not None:
+            #print(f"timestep: {timestep}")
+            #if timestep < 10:
+                # print(f"timestep: {timestep}")
+                # print_occupancy(grid)
+
+        for action_log in step_action_logs:
+            if action_log['action'] == 'interact':
+                if action_log['action_type'] == "deliver_soup":
+                    # Check if the soup is delivered successfully
+                    if action_log['success']:
+                        print(f"Agent {action_log['agent']} successfully delivered soup at timestep {timestep}")
+                    else:
+                        print(f"Agent {action_log['agent']} failed to deliver soup at timestep {timestep}")
+               
+       
+        print(f"timestep: {timestep}")
+        print_occupancy(grid)
+        print("\n\n\n\n")
+        
+        # Create a deep copy of the grid before appending
+        import copy
+        grid_copy = copy.deepcopy(grid)
+        snapshots.append(grid_copy)
+        action_logs.append(step_action_logs)
     
     return snapshots, action_logs
 
@@ -1116,6 +1212,7 @@ def parse_pickle_file(pickle_file):
     import pickle
     
     with open(pickle_file, 'rb') as f:
+
         data = pickle.load(f)
     
     trajectory = []
@@ -1131,6 +1228,9 @@ def parse_pickle_file(pickle_file):
     
     return trajectory
 
+
+import pickle
+
 def main():
     layout_list = [ 
         ['X','X','X','P','P','X','X','X'],
@@ -1141,24 +1241,33 @@ def main():
     ]
 
     terrain_grid = build_terrain_grid(layout_list)
-    #print("Terrain grid: ", terrain_grid[4][4])
     agent_positions = get_initial_agent_positions(layout_list)
     grid = initialize_grid(terrain_grid, agent_positions)
-    #print("Grid: ", grid[4][4])
+    
     # Parse the pickle trajectory
     trajectory = parse_pickle_file("traj_0_1.pkl")
-    trajectory = trajectory[:173]
+    trajectory = trajectory[:172]
     
     # Parse trajectory and get snapshots and action logs
     snapshots, action_logs = parse_trajectory(trajectory, terrain_grid)
     
-    # Print grid and action logs for each timestep
-    for timestep in sorted(snapshots.keys()):
+    output_data = {
+        "snapshots": snapshots,
+        "action_logs": action_logs
+    }
+    
+    with open("output_data.pkl", "wb") as pickle_file:
+        pickle.dump(output_data, pickle_file)
+    
+    print("Snapshots and action logs have been saved to output_data.pkl")
+
+    #Print grid and action logs for each timestep
+    for timestep in range(len(snapshots)):
         print(f"\nTimestep {timestep}:")
         print("\nGrid State:")
         print_occupancy(snapshots[timestep])
         
-        if timestep in action_logs and action_logs[timestep]:
+        if timestep < len(action_logs) and action_logs[timestep]:
             print("\nAction Logs:")
             for log in action_logs[timestep]:
                 try:
@@ -1175,8 +1284,9 @@ def main():
             print("\nNo actions in this timestep")
         
         print("\n" + "-"*50)
-
+    
 
 
 if __name__ == "__main__":
     main()
+
