@@ -107,6 +107,9 @@ def print_occupancy(grid):
             if cell['Agent_0']['is_present']:
                 if cell['Agent_0']['held_objects']:
                     row_str.append(f"A0({cell['Agent_0']['held_objects']['name'][:1]})")
+                    #if cell['Agent_0']['held_objects']['name'] == 'soup':
+                        # print(f"soup: {cell['Agent_0']['held_objects']['state']}")
+                        # print("\n\n\n\n")
                 else:
                     row_str.append("A0")
             elif cell['Agent_1']['is_present']:
@@ -122,6 +125,9 @@ def print_occupancy(grid):
                 elif obj_name == 'dish':
                     row_str.append('d')
                 elif obj_name == 'soup':
+                    # print("soup state")
+                    # print(f"soup: {cell['object']['state']}")
+                    # print("\n\n\n\n")
                     row_str.append('s')
                 else:
                     row_str.append(obj_name[0])
@@ -793,6 +799,7 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
             elif action_type in ['pickup_onion_from_counter', 'pickup_dish_from_counter']:
            
                 picked_obj = target_cell['object']
+                picked_obj['position'] = pos
                 grid[y][x][agent_key]['held_objects'] = picked_obj
                 grid[y][x][agent_key]['hand_empty'] = False
                 
@@ -820,6 +827,7 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                 grid[y][x][agent_key]['hand_empty'] = True
                 
                 # Place object on counter
+                current_held['position'] = target_pos
                 target_cell['object'] = current_held
                 target_cell['is_empty'] = False
                 # print(f"Target Pos: {target_pos}")
@@ -843,23 +851,25 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                 # Get current soup state
                 current_soup = target_cell['object']
                 if current_soup is not None and current_soup['name'] == 'soup':
-                    #print(f"current_soup: {current_soup}")
-                    #print("\n\n\n\n")
+                    print(f"current_soup: {current_soup}")
+                    print("\n\n\n\n")
                     onion_count = current_soup['state'][1]
                     onion_count += 1
                     onion_array = current_soup['state'][0]
-                    #print(current_soup)
+                    print(current_soup)
+                    current_held['position'] = target_pos
                     onion_array.append(current_held)
                     current_soup['state'] = (onion_array, onion_count, 0)
                 
                 else:
-                    #print(f"current_held: {current_held}")
+                    print(f"current_held: {current_held}")
                     #print("\n\n\n\n")
                     soup_state = ([current_held], 1, 0)
                     target_cell['object'] = {
                         'name': 'soup',
                         'position': target_pos,
-                        'state': soup_state  # Cooking starts only when onions = 3
+                        'state': soup_state ,
+                        "id": generate_object_id('soup') # Cooking starts only when onions = 3
                     }
                     #print(f"target_cell: {target_cell}")
                     #print("\n\n\n\n")
@@ -886,11 +896,17 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                 }
             
             elif action_type == 'pickup_soup_from_pot':
-           
+                
+                soup_state_obj = target_cell['object']['state'][0]
+                soup_state_obj.append(current_held)
+                target_cell['object']['state'] = (soup_state_obj, target_cell['object']['state'][1], target_cell['object']['state'][2])
                 held_obj = target_cell['object']
+                held_obj['position'] = pos
                 grid[y][x][agent_key]['held_objects'] = held_obj
                 grid[y][x][agent_key]['hand_empty'] = False
                 
+                # print(f"PICKEED SOUPPPPP")
+                # print(f"held_obj: {held_obj}")
                 # Clear the pot
                 target_cell['object'] = None
                 target_cell['is_empty'] = True
@@ -911,6 +927,7 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
             elif action_type == 'put_soup_on_counter':
                 
                 held_obj = current_held
+                held_obj['position'] = target_pos
                 target_cell['object'] = held_obj
                 
                 target_cell['is_empty'] = False
@@ -937,6 +954,7 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                 
                     # Update agent's held object to soup
                 held_obj = target_cell['object']
+                held_obj['position'] = pos
                 grid[y][x][agent_key]['held_objects'] = held_obj
                 grid[y][x][agent_key]['hand_empty'] = False
                 
@@ -1189,9 +1207,9 @@ def parse_trajectory(trajectory, terrain_grid):
                         print(f"Agent {action_log['agent']} failed to deliver soup at timestep {timestep}")
                
        
-        print(f"timestep: {timestep}")
-        print_occupancy(grid)
-        print("\n\n\n\n")
+        # print(f"timestep: {timestep}")
+        # print_occupancy(grid)
+        # print("\n\n\n\n")
         
         # Create a deep copy of the grid before appending
         import copy
