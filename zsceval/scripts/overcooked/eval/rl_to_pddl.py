@@ -1,4 +1,6 @@
 # Global counters for object IDs
+import copy
+
 soup_counter = 0
 onion_counter = 0
 dish_counter = 0
@@ -107,6 +109,9 @@ def print_occupancy(grid):
             if cell['Agent_0']['is_present']:
                 if cell['Agent_0']['held_objects']:
                     row_str.append(f"A0({cell['Agent_0']['held_objects']['name'][:1]})")
+                    # if cell['Agent_0']['held_objects']['name'] == 'soup':
+                    #     print(f"soup: {cell['Agent_0']['held_objects']['state']}")
+                    #     print("\n\n\n\n")
                 else:
                     row_str.append("A0")
             elif cell['Agent_1']['is_present']:
@@ -122,6 +127,9 @@ def print_occupancy(grid):
                 elif obj_name == 'dish':
                     row_str.append('d')
                 elif obj_name == 'soup':
+                    # print("soup state")
+                    # print(f"soup: {cell['object']['state']}")
+                    # print("\n\n\n\n")
                     row_str.append('s')
                 else:
                     row_str.append(obj_name[0])
@@ -180,23 +188,7 @@ def initialize_grid(terrain_grid, agent_positions):
     
     return grid
 
-def record_grid_snapshot(grid, timestep, snapshots):
-    """
-    Record the current state of the grid at the given timestep.
-    Args:
-        grid: Current grid state
-        timestep: Current timestep
-        snapshots: Dictionary to store snapshots, keyed by timestep
-    """
-    # Create a deep copy of the grid to avoid reference issues
-    snapshot = []
-    for row in grid:
-        snapshot_row = []
-        for cell in row:
-            snapshot_row.append(cell.copy())
-        snapshot.append(snapshot_row)
-    
-    snapshots[timestep] = snapshot
+
 
 def get_preconditions_for_action(action_type, pos, target_pos, agent_key, current_held, target_cell):
     """
@@ -550,7 +542,7 @@ def update_grid_for_move_and_record(agent_idx, from_pos, to_pos, timestep, grid,
         snapshots = {}
     
     # Record snapshot before move
-    record_grid_snapshot(grid, timestep, snapshots)
+    #record_grid_snapshot(grid, timestep, snapshots)
     
     # Get agent key
     agent_key = f'Agent_{agent_idx}'
@@ -621,7 +613,7 @@ def update_grid_for_move_and_record(agent_idx, from_pos, to_pos, timestep, grid,
         tx, ty = to_pos
     
     # Record snapshot after move
-    record_grid_snapshot(grid, timestep, snapshots)
+    #record_grid_snapshot(grid, timestep, snapshots)
     
     # Define effects as cell states after the move
     effects = {
@@ -669,7 +661,7 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
         snapshots = {}
     
     # Record snapshot before interact
-    record_grid_snapshot(grid, timestep, snapshots)
+    #record_grid_snapshot(grid, timestep, snapshots)
     
     # Get agent key
     agent_key = f'Agent_{agent_idx}'
@@ -793,6 +785,7 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
             elif action_type in ['pickup_onion_from_counter', 'pickup_dish_from_counter']:
            
                 picked_obj = target_cell['object']
+                picked_obj['position'] = pos
                 grid[y][x][agent_key]['held_objects'] = picked_obj
                 grid[y][x][agent_key]['hand_empty'] = False
                 
@@ -820,6 +813,7 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                 grid[y][x][agent_key]['hand_empty'] = True
                 
                 # Place object on counter
+                current_held['position'] = target_pos
                 target_cell['object'] = current_held
                 target_cell['is_empty'] = False
                 # print(f"Target Pos: {target_pos}")
@@ -843,54 +837,97 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                 # Get current soup state
                 current_soup = target_cell['object']
                 if current_soup is not None and current_soup['name'] == 'soup':
-                    #print(f"current_soup: {current_soup}")
-                    #print("\n\n\n\n")
+                    print(f"current_soup: {current_soup}")
+                    print("\n\n\n\n")
                     onion_count = current_soup['state'][1]
                     onion_count += 1
-                    onion_array = current_soup['state'][0]
-                    #print(current_soup)
-                    onion_array.append(current_held)
-                    current_soup['state'] = (onion_array, onion_count, 0)
-                
-                else:
-                    #print(f"current_held: {current_held}")
-                    #print("\n\n\n\n")
-                    soup_state = ([current_held], 1, 0)
-                    target_cell['object'] = {
+                    # Create a completely new onion array with deep copies
+                    new_onion_array = []
+                    for onion in current_soup['state'][0]:
+                        new_onion = {
+                            'name': onion['name'],
+                            'position': onion['position'],
+                            'state': onion['state'],
+                            'id': onion['id']
+                        }
+                        new_onion_array.append(new_onion)
+                    # Add the new onion
+                    new_onion = {
+                        'name': current_held['name'],
+                        'position': target_pos,
+                        'state': current_held['state'],
+                        'id': current_held['id']
+                    }
+                    new_onion_array.append(new_onion)
+                    
+                    # Create new soup object
+                    new_soup = {
                         'name': 'soup',
                         'position': target_pos,
-                        'state': soup_state  # Cooking starts only when onions = 3
+                        'state': (new_onion_array, onion_count, 0),
+                        'id': current_soup['id']
                     }
-                    #print(f"target_cell: {target_cell}")
-                    #print("\n\n\n\n")
-
+                    
+                    # Create new target cell
+                    new_target_cell = {
+                        'terrain': target_cell['terrain'],
+                        'Agent_0': copy.deepcopy(target_cell['Agent_0']),
+                        'Agent_1': copy.deepcopy(target_cell['Agent_1']),
+                        'object': new_soup,
+                        'is_empty': False
+                    }
+                    
+                    # Update grid with new cell
+                    grid[target_pos[1]][target_pos[0]] = new_target_cell
+                    current_soup = new_soup
+                
+                else:
+                    print(f"current_held: {current_held}")
+                    # Create new onion array with a single onion
+                    new_onion = {
+                        'name': current_held['name'],
+                        'position': target_pos,
+                        'state': current_held['state'],
+                        'id': current_held['id']
+                    }
+                    soup_state = ([new_onion], 1, 0)
+                    
+                    # Create new soup object
+                    new_soup = {
+                        'name': 'soup',
+                        'position': target_pos,
+                        'state': soup_state,
+                        "id": generate_object_id('soup')
+                    }
+                    
+                    # Create new target cell
+                    new_target_cell = {
+                        'terrain': target_cell['terrain'],
+                        'Agent_0': copy.deepcopy(target_cell['Agent_0']),
+                        'Agent_1': copy.deepcopy(target_cell['Agent_1']),
+                        'object': new_soup,
+                        'is_empty': False
+                    }
+                    
+                    # Update grid with new cell
+                    grid[target_pos[1]][target_pos[0]] = new_target_cell
+                    target_cell = new_target_cell
 
                 grid[y][x][agent_key]['held_objects'] = None
                 grid[y][x][agent_key]['hand_empty'] = True
-                
-                
-        
-                target_cell['is_empty'] = False
-
-                effects = {
-                    pos: {
-                        agent_key: {
-                            'hand_empty': True,
-                            'held_objects': None
-                        }
-                    },
-                    target_pos: {
-                        'object': target_cell['object'],
-                        'is_empty': False
-                    }
-                }
             
             elif action_type == 'pickup_soup_from_pot':
-           
+                
+                soup_state_obj = target_cell['object']['state'][0]
+                soup_state_obj.append(current_held)
+                target_cell['object']['state'] = (soup_state_obj, target_cell['object']['state'][1], target_cell['object']['state'][2])
                 held_obj = target_cell['object']
+                held_obj['position'] = pos
                 grid[y][x][agent_key]['held_objects'] = held_obj
                 grid[y][x][agent_key]['hand_empty'] = False
                 
+                # print(f"PICKEED SOUPPPPP")
+                # print(f"held_obj: {held_obj}")
                 # Clear the pot
                 target_cell['object'] = None
                 target_cell['is_empty'] = True
@@ -911,6 +948,7 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
             elif action_type == 'put_soup_on_counter':
                 
                 held_obj = current_held
+                held_obj['position'] = target_pos
                 target_cell['object'] = held_obj
                 
                 target_cell['is_empty'] = False
@@ -937,6 +975,7 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                 
                     # Update agent's held object to soup
                 held_obj = target_cell['object']
+                held_obj['position'] = pos
                 grid[y][x][agent_key]['held_objects'] = held_obj
                 grid[y][x][agent_key]['hand_empty'] = False
                 
@@ -976,7 +1015,7 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
         effects = {}
     
     # Record snapshot after interact
-    record_grid_snapshot(grid, timestep, snapshots)
+    #record_grid_snapshot(grid, timestep, snapshots)
     
     # Create detailed action log
     action_log = {
@@ -1100,8 +1139,8 @@ def process_actions(step, grid, next_state=None):
                 action_logs.append(action_log)
             else:
                 # Handle movement action - action is just (dx, dy)
-                if state_info['timestep'] in [85,86,87,88,89,90,91,92,93,94]:
-                    print(f"Agent {player_idx} is moving from {current_pos} to {action}")
+                # if state_info['timestep'] in [85,86,87,88,89,90,91,92,93,94]:
+                #     print(f"Agent {player_idx} is moving from {current_pos} to {action}")
                 dx, dy = action
                 next_pos = (current_pos[0] + dx, current_pos[1] + dy)
                 
@@ -1189,13 +1228,47 @@ def parse_trajectory(trajectory, terrain_grid):
                         print(f"Agent {action_log['agent']} failed to deliver soup at timestep {timestep}")
                
        
-        print(f"timestep: {timestep}")
-        print_occupancy(grid)
-        print("\n\n\n\n")
+        # print(f"timestep: {timestep}")
+        # print_occupancy(grid)
+        # print("\n\n\n\n")
         
         # Create a deep copy of the grid before appending
-        import copy
-        grid_copy = copy.deepcopy(grid)
+        grid_copy = []
+        for row in grid:
+            row_copy = []
+            for cell in row:
+                cell_copy = {
+                    'terrain': cell['terrain'],
+                    'Agent_0': {
+                        'is_present': cell['Agent_0']['is_present'],
+                        'hand_empty': cell['Agent_0']['hand_empty'],
+                        'orientation': cell['Agent_0']['orientation'],
+                        'held_objects': copy.deepcopy(cell['Agent_0']['held_objects']) if cell['Agent_0']['held_objects'] is not None else None
+                    },
+                    'Agent_1': {
+                        'is_present': cell['Agent_1']['is_present'],
+                        'hand_empty': cell['Agent_1']['hand_empty'],
+                        'orientation': cell['Agent_1']['orientation'],
+                        'held_objects': copy.deepcopy(cell['Agent_1']['held_objects']) if cell['Agent_1']['held_objects'] is not None else None
+                    },
+                    'object': None,
+                    'is_empty': cell['is_empty']
+                }
+                if cell['object'] is not None:
+                    if cell['object']['name'] == 'soup':
+                        # Deep copy soup state and its components
+                        soup_state = cell['object']['state']
+                        onion_array = copy.deepcopy(soup_state[0])
+                        cell_copy['object'] = {
+                            'name': 'soup',
+                            'position': cell['object']['position'],
+                            'state': (onion_array, soup_state[1], soup_state[2]),
+                            'id': cell['object']['id']
+                        }
+                    else:
+                        cell_copy['object'] = copy.deepcopy(cell['object'])
+                row_copy.append(cell_copy)
+            grid_copy.append(row_copy)
         snapshots.append(grid_copy)
         action_logs.append(step_action_logs)
     
@@ -1245,8 +1318,8 @@ def main():
     grid = initialize_grid(terrain_grid, agent_positions)
     
     # Parse the pickle trajectory
-    trajectory = parse_pickle_file("traj_0_1.pkl")
-    trajectory = trajectory[:172]
+    trajectory = parse_pickle_file("traj_1_3.pkl")
+    # trajectory = trajectory[:172]
     
     # Parse trajectory and get snapshots and action logs
     snapshots, action_logs = parse_trajectory(trajectory, terrain_grid)
@@ -1267,26 +1340,25 @@ def main():
         print("\nGrid State:")
         print_occupancy(snapshots[timestep])
         
-        if timestep < len(action_logs) and action_logs[timestep]:
-            print("\nAction Logs:")
-            for log in action_logs[timestep]:
-                try:
-                    if log['action'] == 'interact':
-                        print(f"Agent {log['agent']} attempted to interact at position {log['from_pos']}")
-                    else:
-                        print(f"Agent {log['agent']} attempted to move {log['action']} from {log['from_pos']} to {log['to_pos']}")
-                    print("Preconditions:", log['preconditions'])
-                    print("Effects:", log['effects'])
-                    print(f"Move successful: {log['move_successful']}")
-                except:
-                    print(log)
-        else:
-            print("\nNo actions in this timestep")
+        # if timestep < len(action_logs) and action_logs[timestep]:
+        #     print("\nAction Logs:")
+        #     for log in action_logs[timestep]:
+        #         try:
+        #             if log['action'] == 'interact':
+        #                 print(f"Agent {log['agent']} attempted to interact at position {log['from_pos']}")
+        #             else:
+        #                 print(f"Agent {log['agent']} attempted to move {log['action']} from {log['from_pos']} to {log['to_pos']}")
+        #             print("Preconditions:", log['preconditions'])
+        #             print("Effects:", log['effects'])
+        #             print(f"Move successful: {log['move_successful']}")
+        #         except:
+        #             print(log)
+        # else:
+        #     print("\nNo actions in this timestep")
         
-        print("\n" + "-"*50)
+        # print("\n" + "-"*50)
     
 
 
 if __name__ == "__main__":
     main()
-
