@@ -1,5 +1,6 @@
 # Global counters for object IDs
 import copy
+import argparse
 
 soup_counter = 0
 onion_counter = 0
@@ -694,9 +695,12 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
         next_player = next_state['players'][agent_idx]
         next_held = next_player['held_object']
 
-       
+        #print(f"current_held: {current_held}")
+        #print(f"next_held: {next_held}")
+        #print(f"Time step: {timestep}")
         
         if current_held is None and next_held is not None:
+            print(target_cell)
             if target_cell['terrain'] == 'onion_dispenser':
                 action_type = 'pickup_onion_from_dispenser'
             elif target_cell['terrain'] == 'dish_dispenser':
@@ -737,8 +741,8 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
         elif current_held is not None and next_held is not None:
             if current_held['name'] == 'dish' and next_held['name'] == 'soup':
                 action_type = 'pickup_soup_from_pot'
-                print(f"time step: {timestep}")
-                print(f"pickup soup from pot")
+                #print(f"time step: {timestep}")
+                #print(f"pickup soup from pot")
 
         #if action_type is None:
             #print(f"time step: {timestep}")
@@ -1105,8 +1109,12 @@ def process_actions(step, grid, next_state=None):
     """
     state_info = step['State_info']
     action_logs = []
+
+
     if next_state is not None:
-     next_state_info = next_state['State_info']
+        next_state_info = next_state['State_info']
+    else:
+        next_state_info = None
     
     if step['Player_actions'] is not None:
         
@@ -1129,14 +1137,15 @@ def process_actions(step, grid, next_state=None):
 
             if action == 'interact':
                 # Handle interact action using new function
-                action_log, grid = update_grid_for_interact_and_record(
-                    agent_idx=player_idx,
-                    pos=current_pos,
-                    timestep=state_info['timestep'],
-                    grid=grid,
-                    next_state=next_state_info  # Pass next state info if available
-                )
-                action_logs.append(action_log)
+                if next_state_info is not None:
+                    action_log, grid = update_grid_for_interact_and_record(
+                        agent_idx=player_idx,
+                        pos=current_pos,
+                        timestep=state_info['timestep'],
+                        grid=grid,
+                        next_state=next_state_info  # Pass next state info if available
+                    )
+                    action_logs.append(action_log)
             else:
                 # Handle movement action - action is just (dx, dy)
                 # if state_info['timestep'] in [85,86,87,88,89,90,91,92,93,94]:
@@ -1192,7 +1201,15 @@ def parse_trajectory(trajectory, terrain_grid):
     """
     snapshots = []
     action_logs = []
-    
+
+    if(trajectory[len(trajectory)-1]['State_info'] == []):
+        print("TRUE")
+        print(len(trajectory))
+        trajectory = trajectory[:-1]
+        print(len(trajectory))
+        print("Modified last state")
+        print(trajectory[len(trajectory)-1])
+
     for i in range(len(trajectory)):                
         step = trajectory[i]
         next_state = trajectory[i+1] if i+1 < len(trajectory) else None
@@ -1228,9 +1245,9 @@ def parse_trajectory(trajectory, terrain_grid):
                         print(f"Agent {action_log['agent']} failed to deliver soup at timestep {timestep}")
                
        
-        # print(f"timestep: {timestep}")
-        # print_occupancy(grid)
-        # print("\n\n\n\n")
+        #print(f"timestep: {timestep}")
+        #print_occupancy(grid)
+        #print("\n\n\n\n")
         
         # Create a deep copy of the grid before appending
         grid_copy = []
@@ -1305,21 +1322,41 @@ def parse_pickle_file(pickle_file):
 import pickle
 
 def main():
-    layout_list = [ 
-        ['X','X','X','P','P','X','X','X'],
-        ['X',None,None,2,None,None,None,'X'],
-        ['D',None,'X','X','X','X',None,'S'],
-        ['X',None,None,1,None,None,None,'X'],
-        ['X','X','X','O','O','X','X','X']
-    ]
+    parser = argparse.ArgumentParser(description='Process Overcooked trajectory data')
+    parser.add_argument('--layout_name', type=str, default='cramped_room',
+                      help='Name of the layout to use (default: cramped_room)')
+    parser.add_argument('--input_trajectory', type=str, default='human_trail.pkl',
+                      help='Input trajectory file path (default: human_trail.pkl)')
+    parser.add_argument('--output_file', type=str, default='output_data.pkl',
+                      help='Output file path (default: output_data.pkl)')
+    
+    args = parser.parse_args()
+    
+    layout_name = args.layout_name
+    if layout_name == "counter_circuit":
+        layout_list = [ 
+            ['X','X','X','P','P','X','X','X'],
+            ['X',None,None,2,None,None,None,'X'],
+            ['D',None,'X','X','X','X',None,'S'],
+            ['X',None,None,1,None,None,None,'X'],
+            ['X','X','X','O','O','X','X','X']
+        ]
+    elif layout_name =="cramped_room":
+        layout_list = [
+            ['X', 'X', 'P', 'X', 'X'],
+            ['O', None, None, 2, 'O'],
+            ['X', 1, None, None, 'X'],
+            ['X', 'D', 'X', 'S', 'X']
+        ]
 
     terrain_grid = build_terrain_grid(layout_list)
     agent_positions = get_initial_agent_positions(layout_list)
     grid = initialize_grid(terrain_grid, agent_positions)
     
     # Parse the pickle trajectory
-    trajectory = parse_pickle_file("traj_0_1.pkl")
-    trajectory = trajectory[:172]
+    trajectory = parse_pickle_file(args.input_trajectory)
+
+    #trajectory = trajectory[:172]
     
     # Parse trajectory and get snapshots and action logs
     snapshots, action_logs = parse_trajectory(trajectory, terrain_grid)
@@ -1329,10 +1366,10 @@ def main():
         "action_logs": action_logs
     }
     
-    with open("output_data.pkl", "wb") as pickle_file:
+    with open(args.output_file, "wb") as pickle_file:
         pickle.dump(output_data, pickle_file)
     
-    print("Snapshots and action logs have been saved to output_data.pkl")
+    print(f"Snapshots and action logs have been saved to {args.output_file}")
 
     #Print grid and action logs for each timestep
     for timestep in range(len(snapshots)):
