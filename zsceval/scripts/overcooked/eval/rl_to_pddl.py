@@ -1348,6 +1348,14 @@ def main():
             ['X', 1, None, None, 'X'],
             ['X', 'D', 'X', 'S', 'X']
         ]
+    elif layout_name == "forced_coordination":
+        layout_list = [
+            ['X', 'X', 'X', 'P', 'X'],
+            ['O', None, 'X', 1, 'P'],
+            ['O', 2, 'X', None, 'X'],
+            ['D', None, 'X', None, 'X'],
+            ['X', 'X', 'X', 'S', 'X']
+        ]
 
     terrain_grid = build_terrain_grid(layout_list)
     agent_positions = get_initial_agent_positions(layout_list)
