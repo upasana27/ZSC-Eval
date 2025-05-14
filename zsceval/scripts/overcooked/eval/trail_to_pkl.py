@@ -1,7 +1,8 @@
 import json
 from typing import Dict, List, Tuple, Optional, Any
 import numpy as np
-import pickle
+import pickle, argparse, os
+from pathlib import Path
 # Action mapping dictionary
 ACTION_MAPPING = {
     0: (0, -1),    # up
@@ -108,11 +109,53 @@ def convert_to_pkl(data: Dict) -> None:
     
     return pkl_data
 
-if __name__ == "__main__":
-    data = load_human_data()
-    pkl_data = convert_to_pkl(data)
-    print(pkl_data[0:8])
+def process_jsons(directory):
+    # directory = Path(directory)
+    # print(directory)
+    # directory.mkdir(exist_ok=True)
+    # Traverse the directory and subdirectories
+    for root, _, files in os.walk(directory):
+        for file in files:
+            if file.endswith('.json'):  # Process only JSON files
+                file_path = os.path.join(root, file)
+                try:
+                    # Read the JSON file
+                    with open(file_path, 'r') as json_file:
+                        data = json.load(json_file) # read the data
+                    
+                    # process the data and convert to pickle
+                    pkl_data = convert_to_pkl(data)
+                    picke_file_path = os.path.splitext(file_path)[0] + '.pkl'
+                    # Resave the JSON file in the exact same spot
+                    with open(picke_file_path, 'wb') as pickle_file:
+                        print(pickle_file)
+                        pickle.dump(pkl_data, pickle_file)  # Optional: Add indentation
+                    print(f"Processed and resaved: {file_path}")
+                except Exception as e:
+                    print(f"Error processing {file_path}: {e}")
 
-    #save to pkl
-    with open('human_trail.pkl', 'wb') as f:
-        pickle.dump(pkl_data, f)
+if __name__ == "__main__":
+    # Parse the directory argument from the command line
+    parser = argparse.ArgumentParser(description="Process and resave JSON files in a directory.")
+    parser.add_argument("directory", type=str, help="Path to the directory containing JSON files")
+    args = parser.parse_args()
+
+    # Call the function with the provided directory
+    process_jsons(args.directory)
+# if __name__ == "__main__":
+#     #get arguments
+#     parser = argparse.ArgumentParser(description="Process and resave JSON files in a directory.")
+#     parser.add_argument("directory", type=str, help="Path to the directory containing JSON files")
+#     args = parser.parse_args()
+#     # do the load and parse iteratively, run convert_to_pkl, then save at thespot
+#     process_jsons(str(args))
+
+    # data = load_human_data()
+
+    # pkl_data = convert_to_pkl(data)
+    # print(pkl_data[0:8])
+    # # take directory from command line, loop over all jsons in the directory (subdirectories included), and save exactly where we found the json
+
+    # #save to pkl
+    # with open('human_trail.pkl', 'wb') as f:
+    #     pickle.dump(pkl_data, f)

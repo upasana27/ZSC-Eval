@@ -1,7 +1,8 @@
 # Global counters for object IDs
 import copy
 import argparse
-
+import os
+from pathlib import Path
 soup_counter = 0
 onion_counter = 0
 dish_counter = 0
@@ -1323,12 +1324,16 @@ import pickle
 
 def main():
     parser = argparse.ArgumentParser(description='Process Overcooked trajectory data')
-    parser.add_argument('--layout_name', type=str, default='cramped_room',
+    parser.add_argument('--layout_name', type=str, default='counter_circuit',
                       help='Name of the layout to use (default: cramped_room)')
-    parser.add_argument('--input_trajectory', type=str, default='human_trail.pkl',
-                      help='Input trajectory file path (default: human_trail.pkl)')
-    parser.add_argument('--output_file', type=str, default='output_data.pkl',
-                      help='Output file path (default: output_data.pkl)')
+    # parser.add_argument('--input_trajectory', type=str, default='human_trail.pkl',
+    #                   help='Input trajectory file path (default: human_trail.pkl)')
+    # parser.add_argument('--output_file', type=str, default='output_data.pkl',
+    #                   help='Output file path (default: output_data.pkl)')
+    parser.add_argument('--input_directory', type=str, default='/home/local/ASUAD/ubiswas2/Desktop/neurips25/ZSC-Eval/zsceval/scripts/overcooked/eval/user_study/fcp/test/',
+                      help='Input trajectory directory')
+    parser.add_argument('--output_directory', type=str, default='/user_study/fcp/test/',
+                      help='Output directory (default: output_data.pkl)')
     
     args = parser.parse_args()
     
@@ -1361,50 +1366,61 @@ def main():
     agent_positions = get_initial_agent_positions(layout_list)
     grid = initialize_grid(terrain_grid, agent_positions)
     
-    # Parse the pickle trajectory
-    trajectory = parse_pickle_file(args.input_trajectory)
+    
+    directory = Path(args.input_directory)
+    print(os.walk(directory))
+    for root, _, files in os.walk(directory):
+        print("here")
+        print(files)
+        for file in files:
+            print(file)
+            if file.endswith('.pkl'):
+                file_path = os.path.join(root, file)
+                # Parse the pickle trajectory
+                trajectory = parse_pickle_file(file_path)
+                print(trajectory)
+                #trajectory = trajectory[:172]
+                
+                # Parse trajectory and get snapshots and action logs
+                snapshots, action_logs = parse_trajectory(trajectory, terrain_grid)
+                
+                output_data = {
+                    "snapshots": snapshots,
+                    "action_logs": action_logs
+                }
+                output_directory = file_path
+                print(file_path)
+                with open(output_directory, "wb") as pickle_file:
+                    pickle.dump(output_data, pickle_file)
+                
+                # print(f"Snapshots and action logs have been saved to {args.output_file}")
 
-    #trajectory = trajectory[:172]
-    
-    # Parse trajectory and get snapshots and action logs
-    snapshots, action_logs = parse_trajectory(trajectory, terrain_grid)
-    
-    output_data = {
-        "snapshots": snapshots,
-        "action_logs": action_logs
-    }
-    
-    with open(args.output_file, "wb") as pickle_file:
-        pickle.dump(output_data, pickle_file)
-    
-    print(f"Snapshots and action logs have been saved to {args.output_file}")
-
-    #Print grid and action logs for each timestep
-    for timestep in range(len(snapshots)):
-        print(f"\nTimestep {timestep}:")
-        print("\nGrid State:")
-        print_occupancy(snapshots[timestep])
-        
-        if timestep < len(action_logs) and action_logs[timestep]:
-            print("\nAction Logs:")
-            for log in action_logs[timestep]:
-                try:
-                    if log['action'] == 'interact':
-                        print(f"Agent {log['agent']} attempted to interact at position {log['from_pos']}")
+                #Print grid and action logs for each timestep
+                for timestep in range(len(snapshots)):
+                    print(f"\nTimestep {timestep}:")
+                    print("\nGrid State:")
+                    print_occupancy(snapshots[timestep])
+                    
+                    if timestep < len(action_logs) and action_logs[timestep]:
+                        print("\nAction Logs:")
+                        for log in action_logs[timestep]:
+                            try:
+                                if log['action'] == 'interact':
+                                    print(f"Agent {log['agent']} attempted to interact at position {log['from_pos']}")
+                                else:
+                                    print(f"Agent {log['agent']} attempted to move {log['action']} from {log['from_pos']} to {log['to_pos']}")
+                                print("Preconditions:", log['preconditions'])
+                                print("Effects:", log['effects'])
+                                print(f"Move successful: {log['move_successful']}")
+                            except:
+                                print(log)
                     else:
-                        print(f"Agent {log['agent']} attempted to move {log['action']} from {log['from_pos']} to {log['to_pos']}")
-                    print("Preconditions:", log['preconditions'])
-                    print("Effects:", log['effects'])
-                    print(f"Move successful: {log['move_successful']}")
-                except:
-                    print(log)
-        else:
-            print("\nNo actions in this timestep")
-        
-        print("\n" + "-"*50)
-    
+                        print("\nNo actions in this timestep")
+                            
+                print("this is the file path", file_path, "end")
 
 
 if __name__ == "__main__":
+    
     main()
 
