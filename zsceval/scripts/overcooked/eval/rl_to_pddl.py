@@ -542,6 +542,11 @@ def update_grid_for_move_and_record(agent_idx, from_pos, to_pos, timestep, grid,
     if snapshots is None:
         snapshots = {}
     
+    agent_key = f'Agent_{agent_idx}'
+    x, y = from_pos
+    orientation = grid[y][x][agent_key]['orientation']
+    # print(f"Agent idx: {agent_idx}")
+    # print(f"Orientation: {orientation}")
     # Record snapshot before move
     #record_grid_snapshot(grid, timestep, snapshots)
     
@@ -582,6 +587,20 @@ def update_grid_for_move_and_record(agent_idx, from_pos, to_pos, timestep, grid,
     # Only update orientation if there's actual movement (not 0,0)
     if action != 'interact' and action != (0, 0):
         grid[fy][fx][agent_key]['orientation'] = action
+
+        if timestep in [39,40,41,42,43]:
+            print("--------------------------------")
+            print("ORIENTATION")
+            print(f"Time step: {timestep}")
+            #print("Changedd orientation")
+            print(f"Agent {agent_idx} is moving from {from_pos} to {to_pos}")
+            print(f"Orientation: {action}")
+            print("--------------------------------")
+            
+        # if agent_idx == 1:
+        #     print(f"Agent {agent_idx} is moving from {from_pos} to {to_pos}")
+        #     print(f"Orientation: {action}")
+        #     print("Time step: ", timestep)
     
     # Only update positions if preconditions are met
     if can_move:
@@ -670,6 +689,8 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
     
     # Get the cell in front of the agent based on orientation
     orientation = grid[y][x][agent_key]['orientation']
+    #print(f"Agent idx: {agent_idx}")
+    #print(f"Orientation: {orientation}")
     if orientation == (0, 1):  # Up
         target_cell = grid[y+1][x]
         target_pos = (x, y+1)
@@ -695,10 +716,15 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
         next_player = next_state['players'][agent_idx]
         next_held = next_player['held_object']
 
-        #print(f"current_held: {current_held}")
-        #print(f"next_held: {next_held}")
-        #print(f"Time step: {timestep}")
-        
+        # print("Agent idx: ", agent_idx)
+        # print("Player position: ", pos)
+        # print("Player orientation: ", orientation)
+        # print("Player held: ", current_held)
+        # print("Next player held: ", next_held)
+        # print("Target cell: ", target_cell)
+        # print("Target pos: ", target_pos)
+        # print("Time step: ", timestep)
+        #print("\n\n\n")
         if current_held is None and next_held is not None:
             print(target_cell)
             if target_cell['terrain'] == 'onion_dispenser':
@@ -820,9 +846,9 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                 current_held['position'] = target_pos
                 target_cell['object'] = current_held
                 target_cell['is_empty'] = False
-                # print(f"Target Pos: {target_pos}")
-                # print(f"action_type: {action_type}")
-                # print("puttttt")
+                print(f"Target Pos: {target_pos}")
+                print(f"action_type: {action_type}")
+                print("puttttt")
 
                 effects = {
                     pos: {
@@ -884,9 +910,21 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                     # Update grid with new cell
                     grid[target_pos[1]][target_pos[0]] = new_target_cell
                     current_soup = new_soup
+
+                    effects = {
+                        pos: {
+                            agent_key: {
+                                'hand_empty': True,
+                                'held_objects': None
+                            }
+                        },
+                        target_pos: {
+                            'object': copy.deepcopy(new_soup)
+                        }
+                    }
                 
                 else:
-                    print(f"current_held: {current_held}")
+                    #print(f"current_held: {current_held}")
                     # Create new onion array with a single onion
                     new_onion = {
                         'name': current_held['name'],
@@ -917,12 +955,26 @@ def update_grid_for_interact_and_record(agent_idx, pos, timestep, grid, snapshot
                     grid[target_pos[1]][target_pos[0]] = new_target_cell
                     target_cell = new_target_cell
 
+                    effects = {
+                        pos: {
+                            agent_key: {
+                                'hand_empty': True,
+                                'held_objects': None
+                            }
+                        },
+                        target_pos: {
+                            'object': copy.deepcopy(new_soup),
+                            'is_empty': False
+                        }
+                    }
                 grid[y][x][agent_key]['held_objects'] = None
                 grid[y][x][agent_key]['hand_empty'] = True
+
+
             
             elif action_type == 'pickup_soup_from_pot':
-                
-                soup_state_obj = target_cell['object']['state'][0]
+                # Create a deep copy of the soup state array
+                soup_state_obj = copy.deepcopy(target_cell['object']['state'][0])
                 soup_state_obj.append(current_held)
                 target_cell['object']['state'] = (soup_state_obj, target_cell['object']['state'][1], target_cell['object']['state'][2])
                 held_obj = target_cell['object']
@@ -1109,6 +1161,15 @@ def process_actions(step, grid, next_state=None):
     """
     state_info = step['State_info']
     action_logs = []
+    players = []
+    
+    for player_idx, player in enumerate(state_info['players']):
+        info = {}
+        info["position"] = player['position']
+        info["orientation"] = player['orientation']
+        players.append(info)
+    
+    #print(f"Orientation and position at timestep: {state_info['timestep']} - {players}")
 
 
     if next_state is not None:
@@ -1155,6 +1216,15 @@ def process_actions(step, grid, next_state=None):
                 
                 # Only execute move if there's no conflict
                 if not has_conflict or next_pos not in [move[1] for idx, move in planned_moves.items() if idx != player_idx]:
+                    if state_info['timestep'] in [39,40,41,42,43]:
+                        print("--------------------------------")
+                        print("MOVEMENT")
+                        print(f"Time step: {state_info['timestep']}")
+                        want_next_pos = (current_pos[0] + dx, current_pos[1] + dy)
+                        print(f"Agent {player_idx} is moving from {current_pos} to {want_next_pos}")
+                        print("--------------------------------")
+                    # print(f"Time step: {state_info['timestep']}")
+                    # print(f"Agent {player_idx} is moving from {current_pos} to {next_pos}")
                     # Update grid and get preconditions/effects
                     action_log, grid = update_grid_for_move_and_record(
                         agent_idx=player_idx,
@@ -1165,6 +1235,12 @@ def process_actions(step, grid, next_state=None):
                         action=action
                     )
                     action_logs.append(action_log)
+                else:
+                    # Even if there's a conflict, update orientation to face the attempted movement direction
+                        # Update orientation in current position
+                        grid[current_pos[1]][current_pos[0]][f'Agent_{player_idx}']['orientation'] = action
+                       
+
     # print("Grid at timestep: ", state_info['timestep'])
     # print_occupancy(grid)
     
@@ -1203,12 +1279,12 @@ def parse_trajectory(trajectory, terrain_grid):
     action_logs = []
 
     if(trajectory[len(trajectory)-1]['State_info'] == []):
-        print("TRUE")
-        print(len(trajectory))
+        #print("TRUE")
+        #print(len(trajectory))
         trajectory = trajectory[:-1]
-        print(len(trajectory))
-        print("Modified last state")
-        print(trajectory[len(trajectory)-1])
+        # print(len(trajectory))
+        # print("Modified last state")
+        # print(trajectory[len(trajectory)-1])
 
     for i in range(len(trajectory)):                
         step = trajectory[i]
