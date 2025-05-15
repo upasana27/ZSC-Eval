@@ -178,7 +178,7 @@ for t,joint_action in enumerate(action_logs):
 
 
 for t,joint_action in enumerate(action_logs):
-    if t<171:
+    if t<170000000:
         print(t)
         for agent_id, action in enumerate(joint_action):
             # action is of form dictionary with keys
