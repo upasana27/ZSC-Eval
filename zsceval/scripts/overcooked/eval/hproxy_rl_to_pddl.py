@@ -1391,13 +1391,12 @@ def parse_pickle_file(pickle_file):
         data = pickle.load(f)
     
     trajectory = []
-    # Each step consists of 4 elements: state info, agent idx, actions, events
-    for n in range(0, len(data), 4):
+    # Each step consists of 3 elements: state info, actions, events
+    for n in range(0, len(data), 3):
         step = {
             'State_info': data[n] if n < len(data) else None,
-            'Agent_idx': data[n+1] if n+1 < len(data) else None,
-            'Player_actions': data[n+2] if n+2 < len(data) else None,
-            'Events': data[n+3] if n+3 < len(data) else None
+            'Player_actions': data[n+1] if n+1 < len(data) else None,
+            'Events': data[n+2] if n+2 < len(data) else None
         }
         trajectory.append(step)
     
