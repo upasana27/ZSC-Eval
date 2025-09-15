@@ -1,0 +1,382 @@
+TRUE
+406
+405
+Modified last state
+{'State_info': {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'dish', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 404}, 'Agent_idx': 0, 'Player_actions': ((0, 1), (0, 0)), 'Events': 0}
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (0, 1)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  7
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  8
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  11
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (-1, 0)
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (-1, 0)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (-1, 0)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (-1, 0)
+Agent idx: 0
+Orientation: (0, 1)
+Agent idx: 1
+Orientation: (-1, 0)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (-1, 0)
+Agent idx: 0
+Orientation: (0, 1)
+Agent idx: 1
+Orientation: (-1, 0)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (-1, 0)
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (-1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (2, 1)
+Time step:  21
+Agent idx: 1
+Orientation: (0, 1)
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (0, 1)
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (0, 1)
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (0, 1)
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (0, 1)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  26
+Agent idx: 1
+Orientation: (0, 1)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (0, 1)
+Agent idx:  0
+Player position:  (3, 2)
+Player orientation:  (0, 1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'floor', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 3)
+Time step:  28
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (0, 1)
+Agent idx:  0
+Player position:  (3, 2)
+Player orientation:  (0, 1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'floor', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 3)
+Time step:  29
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (0, 1)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (0, 1)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (-1, 0)
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (-1, 0)
+Agent idx:  1
+Player position:  (1, 2)
+Player orientation:  (-1, 0)
+Player held:  None
+Next player held:  {'name': 'onion', 'position': (1, 2), 'state': None}
+Target cell:  {'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (0, 2)
+Time step:  33
+{'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (-1, 0)
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (-1, 0)
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  38
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx:  1
+Player position:  (1, 1)
+Player orientation:  (0, -1)
+Player held:  {'name': 'onion', 'position': (1, 1), 'state': None, 'id': 'onion_1'}
+Next player held:  None
+Target cell:  {'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (1, 0)
+Time step:  42
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  46
+Agent idx: 1
+Orientation: (0, 1)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, 1)
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (0, 1)
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (-1, 0)
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (-1, 0)
+Agent idx:  1
+Player position:  (1, 2)
+Player orientation:  (-1, 0)
+Player held:  None
+Next player held:  {'name': 'onion', 'position': (1, 2), 'state': None}
+Target cell:  {'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (0, 2)
+Time step:  50
+{'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (-1, 0)
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (-1, 0)
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  53
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  54
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  56
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  57
+Agent idx: 1
+Orientation: (1, 0)
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (1, 0)
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (1, 0)
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (-1, 0)
+Player held:  None
+Next player held:  {'name': 'onion', 'position': (3, 1), 'state': None}
+Target cell:  {'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (2, 1)
+Time step:  60
+{'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}

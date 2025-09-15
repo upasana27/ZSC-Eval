@@ -1,10 +1,13 @@
 import pickle
-with open("traj_0_1.pkl", 'rb') as f:
-        data = pickle.load(f)
+with open("traj_39_1.pkl", 'rb') as f:
+    data = pickle.load(f)
 #print(len(data))
+print(data[0])
+count_delivery = 0
+delivery_timestep = []
 
-k = 700
-for n in range(0,k , 4):
+k = len(data)
+for n in range(0,k , 3):
     state_info = data[n]
     # Check if state has any dish objects
 #     has_dish = False
@@ -15,17 +18,28 @@ for n in range(0,k , 4):
 #                 break
     
     if True:
-        print(f"\nState {n//4 + 1}:")
+        print(f"\nState {n//3 + 1}:")
         print(f"State info: {state_info}")
+        # if n+1 < len(data):
+        #     print(f"Agent idx: {data[n+1]}")
         if n+1 < len(data):
-            print(f"Agent idx: {data[n+1]}")
-        if n+2 < len(data):
             print("Player actions:")
-            print(data[n+2])
-        if n+3 < len(data):
+            print(data[n+1])
+        if n+2 < len(data):
             print(f"Events: {data[n+3]}")
+            # if data[n+3][0]['delivery'] == 1 or data[n+3][1]['delivery'] == 1:
+            #     print(f"State {n//4 + 1} has delivery event")
+            #     print(f"Timestep: {state_info['timestep']}")
+            #     delivery_timestep.append(state_info['timestep'])
+            #     count_delivery += 1
+                
         print("------------------------")
 
+print("SECOND LAST STATE")
+print(data[k-2])
+
+print("LAST STATE")
+print(data[k-1])
 #     print("------------------------")
 
     # First check the events
@@ -52,30 +66,32 @@ for n in range(0,k , 4):
 #             print(f"Events: {events}")
 #             print("------------------------")
 
-print("\n \n")
-p1_action_traj = []
-p2_action_traj = []
-p1_state_traj = []
-p2_state_traj = []
-p1_events_traj = []
-p2_events_traj = []
-agent_idx_traj = []
-for i in range(0, len(data)):
-        if i % 4 == 0 :
-                p1_state_traj.append(data[i]["players"][0])
-                p2_state_traj.append(data[i]["players"][1])
-                if i + 1 < len(data):
-                        agent_idx_traj.append(data[i+1])
-                if i + 2 < len(data):
-                        p1_action_traj.append(data[i+2][0])
-                        p2_action_traj.append(data[i+2][1])
-                if i + 3 < len(data):
-                        p1_events_traj.append(data[i+3][0])
-                        p2_events_traj.append(data[i+3][1])
-#print(agent_idx_traj)
-#print(f"Player 1 actions - {p1_action_traj}")
-print("\n \n \n")
-#print(f"Player 1 state - {p1_state_traj}")
+# print("\n \n")
+# print(f"Total number of states with delivery event: {count_delivery}")
+# print(f"Delivery timesteps: {delivery_timestep}")
+# p1_action_traj = []
+# p2_action_traj = []
+# p1_state_traj = []
+# p2_state_traj = []
+# p1_events_traj = []
+# p2_events_traj = []
+# agent_idx_traj = []
+# for i in range(0, len(data)):
+#         if i % 4 == 0 :
+#                 p1_state_traj.append(data[i]["players"][0])
+#                 p2_state_traj.append(data[i]["players"][1])
+#                 if i + 1 < len(data):
+#                         agent_idx_traj.append(data[i+1])
+#                 if i + 2 < len(data):
+#                         p1_action_traj.append(data[i+2][0])
+#                         p2_action_traj.append(data[i+2][1])
+#                 # if i + 3 < len(data):
+#                 #         p1_events_traj.append(data[i+3][0])
+#                 #         p2_events_traj.append(data[i+3][1])
+# #print(agent_idx_traj)
+# #print(f"Player 1 actions - {p1_action_traj}")
+# print("\n \n \n")
+# #print(f"Player 1 state - {p1_state_traj}")
 print("\n \n \n")
 #print(f"Player 1 events - {p1_events_traj}")
 

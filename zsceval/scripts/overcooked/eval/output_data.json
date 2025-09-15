@@ -1,0 +1,22 @@
+{
+    "action_logs": [
+        {
+            "0": [
+                {
+                    "agent": 0,
+                    "action": [
+                        1,
+                        0
+                    ],
+                    "from_pos": [
+                        3,
+                        3
+                    ],
+                    "to_pos": [
+                        4,
+                        3
+                    ],
+                    "timestep": 0,
+                    "move_successful": true,
+                    "preconditions": {
+                        

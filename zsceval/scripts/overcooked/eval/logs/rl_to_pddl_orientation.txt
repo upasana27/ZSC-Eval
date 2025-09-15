@@ -1,0 +1,65 @@
+{'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+--------------------------------
+MOVEMENT
+Time step: 39
+Agent 0 is moving from (3, 1) to (3, 1)
+--------------------------------
+--------------------------------
+MOVEMENT
+Time step: 39
+Agent 1 is moving from (1, 1) to (1, 0)
+--------------------------------
+--------------------------------
+ORIENTATION
+Time step: 39
+Agent 1 is moving from (1, 1) to (1, 0)
+Orientation: (0, -1)
+--------------------------------
+--------------------------------
+MOVEMENT
+Time step: 41
+Agent 0 is moving from (3, 1) to (2, 1)
+--------------------------------
+--------------------------------
+ORIENTATION
+Time step: 41
+Agent 0 is moving from (3, 1) to (2, 1)
+Orientation: (-1, 0)
+--------------------------------
+--------------------------------
+MOVEMENT
+Time step: 41
+Agent 1 is moving from (1, 1) to (1, 1)
+--------------------------------
+--------------------------------
+MOVEMENT
+Time step: 42
+Agent 0 is moving from (3, 1) to (4, 1)
+--------------------------------
+--------------------------------
+ORIENTATION
+Time step: 42
+Agent 0 is moving from (3, 1) to (4, 1)
+Orientation: (1, 0)
+--------------------------------
+Target Pos: (1, 0)
+action_type: put_onion_on_counter
+puttttt
+--------------------------------
+MOVEMENT
+Time step: 43
+Agent 0 is moving from (3, 1) to (3, 0)
+--------------------------------
+--------------------------------
+ORIENTATION
+Time step: 43
+Agent 0 is moving from (3, 1) to (3, 0)
+Orientation: (0, -1)
+--------------------------------
+--------------------------------
+MOVEMENT
+Time step: 43
+Agent 1 is moving from (1, 1) to (1, 1)
+--------------------------------
+{'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+{'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}

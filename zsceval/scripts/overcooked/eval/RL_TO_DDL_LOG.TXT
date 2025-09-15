@@ -1,0 +1,3126 @@
+TRUE
+406
+405
+Modified last state
+{'State_info': {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'dish', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 404}, 'Agent_idx': 0, 'Player_actions': ((0, 1), (0, 0)), 'Events': 0}
+Grid at timestep:  0
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  1
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  2
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  3
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  4
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  5
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  6
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Time step: 7
+Grid at timestep:  7
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Time step: 8
+Grid at timestep:  8
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  9
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  10
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Time step: 11
+Grid at timestep:  11
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  12
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  13
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  14
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  15
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  16
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  17
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  18
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  19
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  20
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Time step: 21
+Grid at timestep:  21
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Grid at timestep:  22
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Grid at timestep:  23
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Grid at timestep:  24
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Grid at timestep:  25
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Time step: 26
+Grid at timestep:  26
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  27
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'floor', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Time step: 28
+Grid at timestep:  28
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'floor', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Time step: 29
+Grid at timestep:  29
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  30
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  31
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  32
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: {'name': 'onion', 'position': (1, 2), 'state': None}
+target_cell: {'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Time step: 33
+{'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Grid at timestep:  33
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1(o) X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  34
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1(o) X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  35
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X . P
+2 O . X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  36
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  37
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Time step: 38
+Grid at timestep:  38
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  39
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  40
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  41
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+current_held: {'name': 'onion', 'position': (1, 1), 'state': None, 'id': 'onion_1'}
+next_held: None
+target_cell: {'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Time step: 42
+Grid at timestep:  42
+  0 1 2 3 4
+0 X o X P X
+1 O A1 X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  43
+  0 1 2 3 4
+0 X o X P X
+1 O A1 X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  44
+  0 1 2 3 4
+0 X o X P X
+1 O A1 X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  45
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Time step: 46
+Grid at timestep:  46
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  47
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  48
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  49
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: {'name': 'onion', 'position': (1, 2), 'state': None}
+target_cell: {'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Time step: 50
+{'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Grid at timestep:  50
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1(o) X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  51
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1(o) X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  52
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Time step: 53
+Grid at timestep:  53
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Time step: 54
+Grid at timestep:  54
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  55
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Time step: 56
+Grid at timestep:  56
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Time step: 57
+Grid at timestep:  57
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  58
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  59
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: {'name': 'onion', 'position': (3, 1), 'state': None}
+target_cell: {'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Time step: 60
+{'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+TRUE
+406
+405
+Modified last state
+{'State_info': {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'dish', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 404}, 'Agent_idx': 0, 'Player_actions': ((0, 1), (0, 0)), 'Events': 0}
+Grid at timestep:  0
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  1
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  2
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  3
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  4
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  5
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  6
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+target_pos: (3, 0)
+Time step: 7
+Grid at timestep:  7
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+target_pos: (3, 0)
+Time step: 8
+Grid at timestep:  8
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  9
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  10
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+target_pos: (3, 0)
+Time step: 11
+Grid at timestep:  11
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  12
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  13
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  14
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  15
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  16
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  17
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  18
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  19
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  20
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+target_pos: (2, 1)
+Time step: 21
+Grid at timestep:  21
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Grid at timestep:  22
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Grid at timestep:  23
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Grid at timestep:  24
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Grid at timestep:  25
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+target_pos: (3, 0)
+Time step: 26
+Grid at timestep:  26
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  27
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'floor', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+target_pos: (3, 3)
+Time step: 28
+Grid at timestep:  28
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'floor', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+target_pos: (3, 3)
+Time step: 29
+Grid at timestep:  29
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  30
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  31
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  32
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: {'name': 'onion', 'position': (1, 2), 'state': None}
+target_cell: {'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+target_pos: (0, 2)
+Time step: 33
+{'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Grid at timestep:  33
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1(o) X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  34
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1(o) X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  35
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X . P
+2 O . X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  36
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  37
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+target_pos: (4, 1)
+Time step: 38
+Grid at timestep:  38
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  39
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  40
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  41
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+current_held: {'name': 'onion', 'position': (1, 1), 'state': None, 'id': 'onion_1'}
+next_held: None
+target_cell: {'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+target_pos: (1, 0)
+Time step: 42
+Grid at timestep:  42
+  0 1 2 3 4
+0 X o X P X
+1 O A1 X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  43
+  0 1 2 3 4
+0 X o X P X
+1 O A1 X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  44
+  0 1 2 3 4
+0 X o X P X
+1 O A1 X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  45
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+target_pos: (3, 0)
+Time step: 46
+Grid at timestep:  46
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  47
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  48
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  49
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: {'name': 'onion', 'position': (1, 2), 'state': None}
+target_cell: {'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+target_pos: (0, 2)
+Time step: 50
+{'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Grid at timestep:  50
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1(o) X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  51
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1(o) X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  52
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+target_pos: (4, 1)
+Time step: 53
+Grid at timestep:  53
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+target_pos: (4, 1)
+Time step: 54
+Grid at timestep:  54
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  55
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+target_pos: (4, 1)
+Time step: 56
+Grid at timestep:  56
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: None
+target_cell: {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+target_pos: (4, 1)
+Time step: 57
+Grid at timestep:  57
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  58
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  59
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+current_held: None
+next_held: {'name': 'onion', 'position': (3, 1), 'state': None}
+target_cell: {'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+target_pos: (2, 1)
+Time step: 60
+{'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+TRUE
+406
+405
+Modified last state
+{'State_info': {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'dish', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 404}, 'Agent_idx': 0, 'Player_actions': ((0, 1), (0, 0)), 'Events': 0}
+Grid at timestep:  0
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  1
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  2
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  3
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  4
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  5
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  6
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  7
+
+
+
+
+Grid at timestep:  7
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  8
+
+
+
+
+Grid at timestep:  8
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  9
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  10
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  11
+
+
+
+
+Grid at timestep:  11
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  12
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  13
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  14
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  15
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  16
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  17
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  18
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  19
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  20
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Player position:  (3, 1)
+Player orientation:  (-1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (2, 1)
+Time step:  21
+
+
+
+
+Grid at timestep:  21
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Grid at timestep:  22
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Grid at timestep:  23
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Grid at timestep:  24
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Grid at timestep:  25
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  26
+
+
+
+
+Grid at timestep:  26
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  27
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Player position:  (3, 2)
+Player orientation:  (0, 1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'floor', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 3)
+Time step:  28
+
+
+
+
+Grid at timestep:  28
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Player position:  (3, 2)
+Player orientation:  (0, 1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'floor', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 3)
+Time step:  29
+
+
+
+
+Grid at timestep:  29
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  30
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  31
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  32
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Player position:  (1, 2)
+Player orientation:  (-1, 0)
+Player held:  None
+Next player held:  {'name': 'onion', 'position': (1, 2), 'state': None}
+Target cell:  {'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (0, 2)
+Time step:  33
+
+
+
+
+{'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Grid at timestep:  33
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1(o) X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  34
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1(o) X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  35
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X . P
+2 O . X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  36
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  37
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  38
+
+
+
+
+Grid at timestep:  38
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  39
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  40
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  41
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Player position:  (1, 1)
+Player orientation:  (0, -1)
+Player held:  {'name': 'onion', 'position': (1, 1), 'state': None, 'id': 'onion_1'}
+Next player held:  None
+Target cell:  {'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (1, 0)
+Time step:  42
+
+
+
+
+Grid at timestep:  42
+  0 1 2 3 4
+0 X o X P X
+1 O A1 X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  43
+  0 1 2 3 4
+0 X o X P X
+1 O A1 X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  44
+  0 1 2 3 4
+0 X o X P X
+1 O A1 X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  45
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  46
+
+
+
+
+Grid at timestep:  46
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  47
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  48
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  49
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Player position:  (1, 2)
+Player orientation:  (-1, 0)
+Player held:  None
+Next player held:  {'name': 'onion', 'position': (1, 2), 'state': None}
+Target cell:  {'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (0, 2)
+Time step:  50
+
+
+
+
+{'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Grid at timestep:  50
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1(o) X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  51
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1(o) X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  52
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  53
+
+
+
+
+Grid at timestep:  53
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  54
+
+
+
+
+Grid at timestep:  54
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  55
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  56
+
+
+
+
+Grid at timestep:  56
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  57
+
+
+
+
+Grid at timestep:  57
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  58
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  59
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Player position:  (3, 1)
+Player orientation:  (-1, 0)
+Player held:  None
+Next player held:  {'name': 'onion', 'position': (3, 1), 'state': None}
+Target cell:  {'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (2, 1)
+Time step:  60
+
+
+
+
+{'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+TRUE
+406
+405
+Modified last state
+{'State_info': {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'dish', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 404}, 'Agent_idx': 0, 'Player_actions': ((0, 1), (0, 0)), 'Events': 0}
+Grid at timestep:  0
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  1
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  2
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  3
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  4
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  5
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  6
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  7
+
+
+
+
+Grid at timestep:  7
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  8
+
+
+
+
+Grid at timestep:  8
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  9
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  10
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  11
+
+
+
+
+Grid at timestep:  11
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  12
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  13
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  14
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  15
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  16
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  17
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  18
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  19
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  20
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (-1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (2, 1)
+Time step:  21
+
+
+
+
+Grid at timestep:  21
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Grid at timestep:  22
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Grid at timestep:  23
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Grid at timestep:  24
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Grid at timestep:  25
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  26
+
+
+
+
+Grid at timestep:  26
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  27
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Agent idx:  0
+Player position:  (3, 2)
+Player orientation:  (0, 1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'floor', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 3)
+Time step:  28
+
+
+
+
+Grid at timestep:  28
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Agent idx:  0
+Player position:  (3, 2)
+Player orientation:  (0, 1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'floor', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 3)
+Time step:  29
+
+
+
+
+Grid at timestep:  29
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  30
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  31
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  32
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Agent idx:  1
+Player position:  (1, 2)
+Player orientation:  (-1, 0)
+Player held:  None
+Next player held:  {'name': 'onion', 'position': (1, 2), 'state': None}
+Target cell:  {'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (0, 2)
+Time step:  33
+
+
+
+
+{'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Grid at timestep:  33
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1(o) X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  34
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1(o) X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  35
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X . P
+2 O . X A0 X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  36
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  37
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  38
+
+
+
+
+Grid at timestep:  38
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  39
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  40
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  41
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx:  1
+Player position:  (1, 1)
+Player orientation:  (0, -1)
+Player held:  {'name': 'onion', 'position': (1, 1), 'state': None, 'id': 'onion_1'}
+Next player held:  None
+Target cell:  {'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (1, 0)
+Time step:  42
+
+
+
+
+Grid at timestep:  42
+  0 1 2 3 4
+0 X o X P X
+1 O A1 X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  43
+  0 1 2 3 4
+0 X o X P X
+1 O A1 X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  44
+  0 1 2 3 4
+0 X o X P X
+1 O A1 X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  45
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  46
+
+
+
+
+Grid at timestep:  46
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  47
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  48
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  49
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx:  1
+Player position:  (1, 2)
+Player orientation:  (-1, 0)
+Player held:  None
+Next player held:  {'name': 'onion', 'position': (1, 2), 'state': None}
+Target cell:  {'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (0, 2)
+Time step:  50
+
+
+
+
+{'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Grid at timestep:  50
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1(o) X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  51
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1(o) X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  52
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  53
+
+
+
+
+Grid at timestep:  53
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  54
+
+
+
+
+Grid at timestep:  54
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  55
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  56
+
+
+
+
+Grid at timestep:  56
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  57
+
+
+
+
+Grid at timestep:  57
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  58
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  59
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (-1, 0)
+Player held:  None
+Next player held:  {'name': 'onion', 'position': (3, 1), 'state': None}
+Target cell:  {'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (2, 1)
+Time step:  60
+
+
+
+
+{'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+TRUE
+406
+405
+Modified last state
+{'State_info': {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'dish', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 404}, 'Agent_idx': 0, 'Player_actions': ((0, 1), (0, 0)), 'Events': 0}
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  0
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  1
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  2
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  3
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  4
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, 1)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  5
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  6
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  7
+
+
+
+
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  7
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  8
+
+
+
+
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  8
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  9
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  10
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  11
+
+
+
+
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  11
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  12
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (-1, 0)
+Grid at timestep:  13
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (-1, 0)
+Grid at timestep:  14
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (-1, 0)
+Grid at timestep:  15
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (-1, 0)
+Grid at timestep:  16
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, 1)
+Agent idx: 1
+Orientation: (-1, 0)
+Grid at timestep:  17
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (-1, 0)
+Grid at timestep:  18
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, 1)
+Agent idx: 1
+Orientation: (-1, 0)
+Grid at timestep:  19
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (-1, 0)
+Grid at timestep:  20
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (-1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (2, 1)
+Time step:  21
+
+
+
+
+Agent idx: 1
+Orientation: (0, 1)
+Grid at timestep:  21
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (0, 1)
+Grid at timestep:  22
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (0, 1)
+Grid at timestep:  23
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (0, 1)
+Grid at timestep:  24
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (0, 1)
+Grid at timestep:  25
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O . X . X
+3 D A1 X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  26
+
+
+
+
+Agent idx: 1
+Orientation: (0, 1)
+Grid at timestep:  26
+  0 1 2 3 4
+0 X X X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  27
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, 1)
+Agent idx:  0
+Player position:  (3, 2)
+Player orientation:  (0, 1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'floor', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 3)
+Time step:  28
+
+
+
+
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  28
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, 1)
+Agent idx:  0
+Player position:  (3, 2)
+Player orientation:  (0, 1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'floor', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 3)
+Time step:  29
+
+
+
+
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  29
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, 1)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  30
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, 1)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  31
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (-1, 0)
+Grid at timestep:  32
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1 X A0 X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (-1, 0)
+Agent idx:  1
+Player position:  (1, 2)
+Player orientation:  (-1, 0)
+Player held:  None
+Next player held:  {'name': 'onion', 'position': (1, 2), 'state': None}
+Target cell:  {'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (0, 2)
+Time step:  33
+
+
+
+
+{'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Grid at timestep:  33
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1(o) X A0 X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (-1, 0)
+Grid at timestep:  34
+  0 1 2 3 4
+0 X X X P X
+1 O . X . P
+2 O A1(o) X A0 X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (-1, 0)
+Grid at timestep:  35
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X . P
+2 O . X A0 X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  36
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  37
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  38
+
+
+
+
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  38
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  39
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Grid at timestep:  40
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  41
+  0 1 2 3 4
+0 X X X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx: 1
+Orientation: (0, -1)
+Agent idx:  1
+Player position:  (1, 1)
+Player orientation:  (0, -1)
+Player held:  {'name': 'onion', 'position': (1, 1), 'state': None, 'id': 'onion_1'}
+Next player held:  None
+Target cell:  {'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (1, 0)
+Time step:  42
+
+
+
+
+Grid at timestep:  42
+  0 1 2 3 4
+0 X o X P X
+1 O A1 X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  43
+  0 1 2 3 4
+0 X o X P X
+1 O A1 X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  44
+  0 1 2 3 4
+0 X o X P X
+1 O A1 X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  45
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (0, -1)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (3, 0)
+Time step:  46
+
+
+
+
+Agent idx: 1
+Orientation: (0, 1)
+Grid at timestep:  46
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (0, 1)
+Grid at timestep:  47
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (0, 1)
+Grid at timestep:  48
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (-1, 0)
+Grid at timestep:  49
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1 X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (-1, 0)
+Agent idx:  1
+Player position:  (1, 2)
+Player orientation:  (-1, 0)
+Player held:  None
+Next player held:  {'name': 'onion', 'position': (1, 2), 'state': None}
+Target cell:  {'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (0, 2)
+Time step:  50
+
+
+
+
+{'terrain': 'onion_dispenser', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Grid at timestep:  50
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1(o) X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (0, -1)
+Agent idx: 1
+Orientation: (-1, 0)
+Grid at timestep:  51
+  0 1 2 3 4
+0 X o X P X
+1 O . X A0 P
+2 O A1(o) X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (-1, 0)
+Grid at timestep:  52
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  53
+
+
+
+
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  53
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  54
+
+
+
+
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  54
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  55
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  56
+
+
+
+
+Agent idx: 1
+Orientation: (0, -1)
+Grid at timestep:  56
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (1, 0)
+Player held:  None
+Next player held:  None
+Target cell:  {'terrain': 'pot', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (4, 1)
+Time step:  57
+
+
+
+
+Agent idx: 1
+Orientation: (1, 0)
+Grid at timestep:  57
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (1, 0)
+Grid at timestep:  58
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (1, 0)
+Agent idx: 1
+Orientation: (1, 0)
+Grid at timestep:  59
+  0 1 2 3 4
+0 X o X P X
+1 O A1(o) X A0 P
+2 O . X . X
+3 D . X . X
+4 X X X S X
+Agent idx: 0
+Orientation: (-1, 0)
+Agent idx:  0
+Player position:  (3, 1)
+Player orientation:  (-1, 0)
+Player held:  None
+Next player held:  {'name': 'onion', 'position': (3, 1), 'state': None}
+Target cell:  {'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}
+Target pos:  (2, 1)
+Time step:  60
+
+
+
+
+{'terrain': 'counter', 'Agent_0': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'Agent_1': {'is_present': False, 'hand_empty': True, 'held_objects': None, 'orientation': (0, -1)}, 'object': None, 'is_empty': True}

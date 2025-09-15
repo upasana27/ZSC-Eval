@@ -2,7 +2,7 @@ import json
 from typing import Dict, List, Tuple, Optional, Any
 import numpy as np
 
-def load_human_data(file_path: str = "human.json") -> Dict:
+def load_human_data(file_path: str = "prob.json") -> Dict:
     """
     Load and parse the human gameplay data from JSON file.
     
@@ -20,20 +20,24 @@ def load_human_data(file_path: str = "human.json") -> Dict:
 if __name__ == "__main__":
     data = load_human_data()
     print(data.keys())
-    print(data['mdp_params'])
+    print(data['ep_rewards'][0])
 
-    # for i in range(len(data['ep_states'][0])):
-    #     print(f"Timestep: {i}")
-    #     print(data['ep_states'][0][i])
-    #     print("\n")
+    for i in range(len(data['ep_states'][0])):
+        print(f"Timestep: {i}")
+        players = data['ep_states'][0][i]['players']
+        info= []
+        # for player in players:
+        #     info.append({"position": player['position'], "orientation": player['orientation']})
+        print(f"Timestep: {i} - {info}")
+        print("\n")
 
-    #     print(f"Actions:")
-    #     print(data['ep_actions'][0][i])
-    #     print("\n")
+        print(f"Actions:")
+        print(data['ep_actions'][0][i])
+        print("\n")
 
-    #     print(f"Rewards: ")
-    #     print(data['ep_rewards'][0][i])
-    #     print("\n")   
+        print(f"Rewards: ")
+        print(data['ep_rewards'][0][i])
+        print("\n")   
 
 
     #for i in range(len(data['ep_rewards'][0])):

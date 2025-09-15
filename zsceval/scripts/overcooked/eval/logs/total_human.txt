@@ -1,0 +1,3249 @@
+{'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 0}
+
+State 1:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 0}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 2:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 1}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 3:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 2}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 4:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 3}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 5:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 4}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 6:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 5}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 7:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 6}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 8:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 7}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 9:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 8}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 10:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 9}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 11:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 10}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 12:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 11}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 13:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 12}
+Agent idx: 0
+Player actions:
+((-1, 0), (-1, 0))
+Events: 0
+------------------------
+
+State 14:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 13}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 15:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 14}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 16:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 15}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 17:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 16}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 18:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 17}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 19:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 18}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 20:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 19}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 21:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 20}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 1))
+Events: 0
+------------------------
+
+State 22:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 21}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 23:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 22}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 24:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 23}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 25:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 24}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 26:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 25}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 27:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 26}
+Agent idx: 0
+Player actions:
+('interact', (0, -1))
+Events: 0
+------------------------
+
+State 28:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 27}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 29:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 28}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 30:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 29}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 31:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 30}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 32:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 31}
+Agent idx: 0
+Player actions:
+((1, 0), (-1, 0))
+Events: 0
+------------------------
+
+State 33:
+State info: {'players': [{'position': (3, 2), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 32}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 34:
+State info: {'players': [{'position': (3, 2), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 33}
+Agent idx: 0
+Player actions:
+((0, 0), 'interact')
+Events: 0
+------------------------
+
+State 35:
+State info: {'players': [{'position': (3, 2), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 34}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 36:
+State info: {'players': [{'position': (3, 2), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 35}
+Agent idx: 0
+Player actions:
+((1, 0), (0, -1))
+Events: 0
+------------------------
+
+State 37:
+State info: {'players': [{'position': (3, 2), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 36}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 38:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 37}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 39:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 38}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 40:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 39}
+Agent idx: 0
+Player actions:
+((0, 0), (0, -1))
+Events: 0
+------------------------
+
+
+
+------------------------
+
+State 42:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 41}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 43:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 42}
+Agent idx: 0
+Player actions:
+((1, 0), 'interact')
+Events: 0
+------------------------
+
+State 44:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 43}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 45:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 44}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 46:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 45}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 1))
+Events: 0
+------------------------
+
+State 47:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 46}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 48:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 47}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 49:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 48}
+Agent idx: 0
+Player actions:
+((0, 0), (-1, 0))
+Events: 0
+------------------------
+
+State 50:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 49}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 51:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 50}
+Agent idx: 0
+Player actions:
+((0, -1), 'interact')
+Events: 0
+------------------------
+
+State 52:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 51}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 53:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 52}
+Agent idx: 0
+Player actions:
+((1, 0), (0, -1))
+Events: 0
+------------------------
+
+State 54:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 53}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 55:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 54}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 56:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 55}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 57:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 56}
+Agent idx: 0
+Player actions:
+('interact', (1, 0))
+Events: 0
+------------------------
+
+State 58:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 57}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 59:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 58}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 60:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 59}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 61:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 60}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 62:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 61}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 63:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 62}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 64:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 63}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 65:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 64}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 66:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 65}
+Agent idx: 0
+Player actions:
+((-1, 0), (1, 0))
+Events: 0
+------------------------
+
+State 67:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 66}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 68:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 67}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 69:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 68}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 70:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 69}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 71:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 70}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 72:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 71}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 73:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 72}
+Agent idx: 0
+Player actions:
+('interact', 'interact')
+Events: 0
+------------------------
+
+State 74:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 73}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 75:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 74}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 76:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 75}
+Agent idx: 0
+Player actions:
+((0, -1), (-1, 0))
+Events: 0
+------------------------
+
+State 77:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 76}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 78:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 77}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 79:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 78}
+Agent idx: 0
+Player actions:
+((-1, 0), 'interact')
+Events: 0
+------------------------
+
+State 80:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 79}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 81:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 80}
+Agent idx: 0
+Player actions:
+('interact', (1, 0))
+Events: 0
+------------------------
+
+State 82:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 81}
+Agent idx: 0
+Player actions:
+((-1, 0), 'interact')
+Events: 0
+------------------------
+
+State 83:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 82}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 84:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 83}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 85:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 84}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 86:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 1]}], 'order_list': None, 'timestep': 85}
+Agent idx: 0
+Player actions:
+((0, 0), (-1, 0))
+Events: 0
+------------------------
+
+State 87:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 2]}], 'order_list': None, 'timestep': 86}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 88:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 3]}], 'order_list': None, 'timestep': 87}
+Agent idx: 0
+Player actions:
+('interact', 'interact')
+Events: 0
+------------------------
+
+State 89:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 4]}], 'order_list': None, 'timestep': 88}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 90:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 5]}], 'order_list': None, 'timestep': 89}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 91:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 6]}], 'order_list': None, 'timestep': 90}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 92:
+State info: {'players': [{'position': (3, 2), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 7]}], 'order_list': None, 'timestep': 91}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 93:
+State info: {'players': [{'position': (3, 2), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 8]}], 'order_list': None, 'timestep': 92}
+Agent idx: 0
+Player actions:
+('interact', (1, 0))
+Events: 0
+------------------------
+
+State 94:
+State info: {'players': [{'position': (3, 2), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 9]}], 'order_list': None, 'timestep': 93}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 95:
+State info: {'players': [{'position': (3, 2), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 10]}], 'order_list': None, 'timestep': 94}
+Agent idx: 0
+Player actions:
+((1, 0), 'interact')
+Events: 0
+------------------------
+
+State 96:
+State info: {'players': [{'position': (3, 2), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 11]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 95}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 97:
+State info: {'players': [{'position': (3, 2), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 12]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 96}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 98:
+State info: {'players': [{'position': (3, 2), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 13]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 97}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 99:
+State info: {'players': [{'position': (3, 2), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 14]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 98}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 100:
+State info: {'players': [{'position': (3, 2), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 15]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 99}
+Agent idx: 0
+Player actions:
+((-1, 0), (-1, 0))
+Events: 0
+------------------------
+
+State 101:
+State info: {'players': [{'position': (3, 2), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 16]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 100}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 102:
+State info: {'players': [{'position': (3, 2), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 17]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 101}
+Agent idx: 0
+Player actions:
+((0, 1), 'interact')
+Events: 0
+------------------------
+
+State 103:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 18]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 102}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 104:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 19]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 103}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 105:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 104}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 106:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 105}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 107:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 106}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 108:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 107}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 109:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 108}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 110:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 109}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 1))
+Events: 0
+------------------------
+
+State 111:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 110}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 112:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 111}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 113:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 112}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 114:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 113}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 115:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 114}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 116:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 115}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 117:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 116}
+Agent idx: 0
+Player actions:
+((0, 1), (1, 0))
+Events: 0
+------------------------
+
+State 118:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 117}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 119:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 118}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 120:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 119}
+Agent idx: 0
+Player actions:
+((1, 0), 'interact')
+Events: 0
+------------------------
+
+State 121:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 120}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 122:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 121}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 123:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 122}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 1))
+Events: 0
+------------------------
+
+State 124:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 123}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 125:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 124}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 126:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 125}
+Agent idx: 0
+Player actions:
+((0, 1), (-1, 0))
+Events: 0
+------------------------
+
+State 127:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 126}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 128:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 127}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 129:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 128}
+Agent idx: 0
+Player actions:
+((-1, 0), 'interact')
+Events: 0
+------------------------
+
+State 130:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 129}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 131:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 130}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 132:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 131}
+Agent idx: 0
+Player actions:
+('interact', (1, 0))
+Events: 0
+------------------------
+
+State 133:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 132}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 134:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 133}
+Agent idx: 0
+Player actions:
+((1, 0), 'interact')
+Events: 0
+------------------------
+
+State 135:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}, {'name': 'dish', 'position': (2, 3), 'state': None}], 'order_list': None, 'timestep': 134}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 136:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}, {'name': 'dish', 'position': (2, 3), 'state': None}], 'order_list': None, 'timestep': 135}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 137:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}, {'name': 'dish', 'position': (2, 3), 'state': None}], 'order_list': None, 'timestep': 136}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 138:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (3, 3), 'state': None}}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 137}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 139:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': {'name': 'dish', 'position': (3, 3), 'state': None}}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 138}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 140:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': {'name': 'dish', 'position': (3, 3), 'state': None}}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 139}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 141:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': {'name': 'dish', 'position': (3, 3), 'state': None}}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 140}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 142:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (3, 2), 'state': None}}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 141}
+Agent idx: 0
+Player actions:
+((0, -1), (0, -1))
+Events: 0
+------------------------
+
+State 143:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (3, 1), 'state': None}}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 142}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 144:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'soup', 'position': (3, 1), 'state': ['onion', 3, 20]}}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 143}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 145:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'soup', 'position': (3, 1), 'state': ['onion', 3, 20]}}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 144}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 146:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': {'name': 'soup', 'position': (3, 2), 'state': ['onion', 3, 20]}}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 145}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 147:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': {'name': 'soup', 'position': (3, 3), 'state': ['onion', 3, 20]}}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 146}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 20
+------------------------
+
+State 148:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 147}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 149:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 148}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 150:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 149}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 151:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 150}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 152:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 151}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 153:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 152}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 154:
+State info: {'players': [{'position': (3, 2), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 153}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 155:
+State info: {'players': [{'position': (3, 2), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 2), 'state': None}}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 154}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 156:
+State info: {'players': [{'position': (3, 2), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (3, 2), 'state': None}}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 155}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 157:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 156}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 158:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 157}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 159:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 158}
+Agent idx: 0
+Player actions:
+((0, -1), (0, -1))
+Events: 0
+------------------------
+
+State 160:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 159}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 161:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 160}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 162:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 161}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 163:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 162}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 164:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 163}
+Agent idx: 0
+Player actions:
+((0, 0), (-1, 0))
+Events: 0
+------------------------
+
+State 165:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 164}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 166:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 165}
+Agent idx: 0
+Player actions:
+('interact', 'interact')
+Events: 0
+------------------------
+
+State 167:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 166}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 168:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 167}
+Agent idx: 0
+Player actions:
+((0, -1), (1, 0))
+Events: 0
+------------------------
+
+State 169:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 168}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 170:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 169}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 171:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 170}
+Agent idx: 0
+Player actions:
+('interact', 'interact')
+Events: 0
+------------------------
+
+State 172:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 171}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 173:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 172}
+Agent idx: 0
+Player actions:
+('interact', (0, 1))
+Events: 0
+------------------------
+
+State 174:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 173}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 175:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 174}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 176:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 175}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 177:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 176}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 1))
+Events: 0
+------------------------
+
+State 178:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 177}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 179:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 1]}], 'order_list': None, 'timestep': 178}
+Agent idx: 0
+Player actions:
+((0, 1), (-1, 0))
+Events: 0
+------------------------
+
+State 180:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 2]}], 'order_list': None, 'timestep': 179}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 181:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 3]}], 'order_list': None, 'timestep': 180}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 182:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 4]}], 'order_list': None, 'timestep': 181}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 183:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 5]}], 'order_list': None, 'timestep': 182}
+Agent idx: 0
+Player actions:
+('interact', 'interact')
+Events: 0
+------------------------
+
+State 184:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 6]}], 'order_list': None, 'timestep': 183}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 185:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 7]}], 'order_list': None, 'timestep': 184}
+Agent idx: 0
+Player actions:
+('interact', (1, 0))
+Events: 0
+------------------------
+
+State 186:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 8]}], 'order_list': None, 'timestep': 185}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 187:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 9]}], 'order_list': None, 'timestep': 186}
+Agent idx: 0
+Player actions:
+('interact', 'interact')
+Events: 0
+------------------------
+
+State 188:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 10]}, {'name': 'dish', 'position': (2, 3), 'state': None}], 'order_list': None, 'timestep': 187}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 189:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (3, 3), 'state': None}}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 11]}], 'order_list': None, 'timestep': 188}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 190:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 12]}, {'name': 'dish', 'position': (2, 3), 'state': None}], 'order_list': None, 'timestep': 189}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 191:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (3, 3), 'state': None}}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 13]}], 'order_list': None, 'timestep': 190}
+Agent idx: 0
+Player actions:
+('interact', (0, -1))
+Events: 0
+------------------------
+
+State 192:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 14]}, {'name': 'dish', 'position': (2, 3), 'state': None}], 'order_list': None, 'timestep': 191}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 193:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (3, 3), 'state': None}}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 15]}], 'order_list': None, 'timestep': 192}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 194:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (3, 2), 'state': None}}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 16]}], 'order_list': None, 'timestep': 193}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 195:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (3, 1), 'state': None}}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 17]}], 'order_list': None, 'timestep': 194}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 196:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (3, 1), 'state': None}}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 18]}], 'order_list': None, 'timestep': 195}
+Agent idx: 0
+Player actions:
+('interact', (-1, 0))
+Events: 0
+------------------------
+
+State 197:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (3, 1), 'state': None}}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 19]}], 'order_list': None, 'timestep': 196}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 198:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (3, 1), 'state': None}}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}], 'order_list': None, 'timestep': 197}
+Agent idx: 0
+Player actions:
+('interact', 'interact')
+Events: 0
+------------------------
+
+State 199:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'soup', 'position': (3, 1), 'state': ['onion', 3, 20]}}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 198}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 200:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'soup', 'position': (3, 1), 'state': ['onion', 3, 20]}}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 199}
+Agent idx: 0
+Player actions:
+((0, 1), (1, 0))
+Events: 0
+------------------------
+
+State 201:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': {'name': 'soup', 'position': (3, 2), 'state': ['onion', 3, 20]}}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 200}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 202:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': {'name': 'soup', 'position': (3, 3), 'state': ['onion', 3, 20]}}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 201}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 203:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': {'name': 'soup', 'position': (3, 3), 'state': ['onion', 3, 20]}}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 202}
+Agent idx: 0
+Player actions:
+('interact', 'interact')
+Events: 20
+------------------------
+
+State 204:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 203}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 205:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 204}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 206:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 205}
+Agent idx: 0
+Player actions:
+('interact', (-1, 0))
+Events: 0
+------------------------
+
+State 207:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 206}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 208:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 207}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 209:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 208}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 210:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 209}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 211:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 210}
+Agent idx: 0
+Player actions:
+('interact', 'interact')
+Events: 0
+------------------------
+
+State 212:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 211}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 213:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 212}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 214:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 213}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 215:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 214}
+Agent idx: 0
+Player actions:
+('interact', (0, -1))
+Events: 0
+------------------------
+
+State 216:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 215}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 217:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 216}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 218:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 217}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 219:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 218}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 220:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 219}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 221:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 220}
+Agent idx: 0
+Player actions:
+('interact', (1, 0))
+Events: 0
+------------------------
+
+State 222:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 221}
+Agent idx: 0
+Player actions:
+((1, 0), 'interact')
+Events: 0
+------------------------
+
+State 223:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 222}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 224:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 223}
+Agent idx: 0
+Player actions:
+('interact', (-1, 0))
+Events: 0
+------------------------
+
+State 225:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 224}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 226:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 225}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 227:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 226}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 228:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 227}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 229:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 228}
+Agent idx: 0
+Player actions:
+((-1, 0), 'interact')
+Events: 0
+------------------------
+
+State 230:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 229}
+Agent idx: 0
+Player actions:
+((-1, 0), (1, 0))
+Events: 0
+------------------------
+
+State 231:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 230}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 232:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': {'name': 'onion', 'position': (3, 2), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 231}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 233:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 232}
+Agent idx: 0
+Player actions:
+('interact', 'interact')
+Events: 0
+------------------------
+
+State 234:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}, {'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 233}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 235:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}, {'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 234}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 236:
+State info: {'players': [{'position': (3, 2), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}, {'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 235}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 237:
+State info: {'players': [{'position': (3, 2), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}, {'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 236}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 1))
+Events: 0
+------------------------
+
+State 238:
+State info: {'players': [{'position': (3, 2), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 2), 'state': None}, {'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 237}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 239:
+State info: {'players': [{'position': (3, 2), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 2), 'state': None}}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 238}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 240:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 239}
+Agent idx: 0
+Player actions:
+('interact', (0, 1))
+Events: 0
+------------------------
+
+State 241:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 240}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 1))
+Events: 0
+------------------------
+
+State 242:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 241}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 243:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 242}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 1))
+Events: 0
+------------------------
+
+State 244:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': {'name': 'onion', 'position': (3, 2), 'state': None}}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 243}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 245:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 244}
+Agent idx: 0
+Player actions:
+('interact', (-1, 0))
+Events: 0
+------------------------
+
+State 246:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 1]}], 'order_list': None, 'timestep': 245}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 247:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 2]}], 'order_list': None, 'timestep': 246}
+Agent idx: 0
+Player actions:
+((0, 1), 'interact')
+Events: 0
+------------------------
+
+State 248:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 3]}], 'order_list': None, 'timestep': 247}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 249:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 4]}], 'order_list': None, 'timestep': 248}
+Agent idx: 0
+Player actions:
+((0, 0), (1, 0))
+Events: 0
+------------------------
+
+State 250:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 5]}], 'order_list': None, 'timestep': 249}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 251:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 6]}], 'order_list': None, 'timestep': 250}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 252:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 7]}], 'order_list': None, 'timestep': 251}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 253:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 8]}], 'order_list': None, 'timestep': 252}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 254:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 9]}], 'order_list': None, 'timestep': 253}
+Agent idx: 0
+Player actions:
+((0, 1), 'interact')
+Events: 0
+------------------------
+
+State 255:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 10]}, {'name': 'dish', 'position': (2, 3), 'state': None}], 'order_list': None, 'timestep': 254}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 256:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 11]}, {'name': 'dish', 'position': (2, 3), 'state': None}], 'order_list': None, 'timestep': 255}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 257:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (3, 3), 'state': None}}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 12]}], 'order_list': None, 'timestep': 256}
+Agent idx: 0
+Player actions:
+('interact', (0, -1))
+Events: 0
+------------------------
+
+State 258:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 13]}, {'name': 'dish', 'position': (2, 3), 'state': None}], 'order_list': None, 'timestep': 257}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 259:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 14]}, {'name': 'dish', 'position': (2, 3), 'state': None}], 'order_list': None, 'timestep': 258}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 260:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (3, 3), 'state': None}}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 15]}], 'order_list': None, 'timestep': 259}
+Agent idx: 0
+Player actions:
+((0, 0), (0, -1))
+Events: 0
+------------------------
+
+State 261:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (3, 3), 'state': None}}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 16]}], 'order_list': None, 'timestep': 260}
+Agent idx: 0
+Player actions:
+((0, -1), (0, -1))
+Events: 0
+------------------------
+
+State 262:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (3, 2), 'state': None}}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 17]}], 'order_list': None, 'timestep': 261}
+Agent idx: 0
+Player actions:
+((0, -1), (0, -1))
+Events: 0
+------------------------
+
+State 263:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 18]}], 'order_list': None, 'timestep': 262}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 264:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 19]}], 'order_list': None, 'timestep': 263}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 265:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}], 'order_list': None, 'timestep': 264}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 266:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}], 'order_list': None, 'timestep': 265}
+Agent idx: 0
+Player actions:
+((0, -1), 'interact')
+Events: 0
+------------------------
+
+State 267:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}], 'order_list': None, 'timestep': 266}
+Agent idx: 0
+Player actions:
+('interact', (1, 0))
+Events: 0
+------------------------
+
+State 268:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'soup', 'position': (3, 1), 'state': ['onion', 3, 20]}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 267}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 269:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'soup', 'position': (3, 1), 'state': ['onion', 3, 20]}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 268}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 270:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': {'name': 'soup', 'position': (3, 2), 'state': ['onion', 3, 20]}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 269}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 271:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': {'name': 'soup', 'position': (3, 3), 'state': ['onion', 3, 20]}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 270}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 20
+------------------------
+
+State 272:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 271}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 273:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 272}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 274:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 273}
+Agent idx: 0
+Player actions:
+((0, -1), (-1, 0))
+Events: 0
+------------------------
+
+State 275:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 274}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 276:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 275}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 277:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 276}
+Agent idx: 0
+Player actions:
+((0, 0), (-1, 0))
+Events: 0
+------------------------
+
+State 278:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 277}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 279:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 278}
+Agent idx: 0
+Player actions:
+('interact', 'interact')
+Events: 0
+------------------------
+
+State 280:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 279}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 281:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 280}
+Agent idx: 0
+Player actions:
+('interact', (1, 0))
+Events: 0
+------------------------
+
+State 282:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 281}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 283:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 282}
+Agent idx: 0
+Player actions:
+((1, 0), 'interact')
+Events: 0
+------------------------
+
+State 284:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 283}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 285:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 284}
+Agent idx: 0
+Player actions:
+((0, -1), (-1, 0))
+Events: 0
+------------------------
+
+State 286:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 285}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 287:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 286}
+Agent idx: 0
+Player actions:
+('interact', 'interact')
+Events: 0
+------------------------
+
+State 288:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 287}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 289:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 288}
+Agent idx: 0
+Player actions:
+('interact', (1, 0))
+Events: 0
+------------------------
+
+State 290:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 289}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 291:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 290}
+Agent idx: 0
+Player actions:
+((0, -1), 'interact')
+Events: 0
+------------------------
+
+State 292:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 291}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 293:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 292}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 294:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 293}
+Agent idx: 0
+Player actions:
+((-1, 0), (-1, 0))
+Events: 0
+------------------------
+
+State 295:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 294}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 296:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 295}
+Agent idx: 0
+Player actions:
+((0, 1), 'interact')
+Events: 0
+------------------------
+
+State 297:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': {'name': 'onion', 'position': (3, 2), 'state': None}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 296}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 298:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 297}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 299:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 298}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 1))
+Events: 0
+------------------------
+
+State 300:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 299}
+Agent idx: 0
+Player actions:
+('interact', (1, 0))
+Events: 0
+------------------------
+
+State 301:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 300}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 302:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 301}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 303:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 302}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 304:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 303}
+Agent idx: 0
+Player actions:
+('interact', 'interact')
+Events: 0
+------------------------
+
+State 305:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 304}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 306:
+State info: {'players': [{'position': (3, 2), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}, {'name': 'onion', 'position': (2, 2), 'state': None}], 'order_list': None, 'timestep': 305}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 307:
+State info: {'players': [{'position': (3, 2), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 2), 'state': None}}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 306}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 308:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 2), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 307}
+Agent idx: 0
+Player actions:
+('interact', (0, -1))
+Events: 0
+------------------------
+
+State 309:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 1]}], 'order_list': None, 'timestep': 308}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 310:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 2]}], 'order_list': None, 'timestep': 309}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 311:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 3]}], 'order_list': None, 'timestep': 310}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 1))
+Events: 0
+------------------------
+
+State 312:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 4]}], 'order_list': None, 'timestep': 311}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 313:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 5]}], 'order_list': None, 'timestep': 312}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 1))
+Events: 0
+------------------------
+
+State 314:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 6]}], 'order_list': None, 'timestep': 313}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 315:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 7]}], 'order_list': None, 'timestep': 314}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 1))
+Events: 0
+------------------------
+
+State 316:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 8]}], 'order_list': None, 'timestep': 315}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 317:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 9]}], 'order_list': None, 'timestep': 316}
+Agent idx: 0
+Player actions:
+((-1, 0), (-1, 0))
+Events: 0
+------------------------
+
+State 318:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 10]}], 'order_list': None, 'timestep': 317}
+Agent idx: 0
+Player actions:
+((-1, 0), 'interact')
+Events: 0
+------------------------
+
+State 319:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 11]}], 'order_list': None, 'timestep': 318}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 320:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 12]}], 'order_list': None, 'timestep': 319}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 321:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 13]}], 'order_list': None, 'timestep': 320}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 322:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 14]}], 'order_list': None, 'timestep': 321}
+Agent idx: 0
+Player actions:
+('interact', 'interact')
+Events: 0
+------------------------
+
+State 323:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 15]}], 'order_list': None, 'timestep': 322}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 324:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 16]}], 'order_list': None, 'timestep': 323}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 325:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 17]}], 'order_list': None, 'timestep': 324}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 326:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 18]}], 'order_list': None, 'timestep': 325}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 327:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 19]}], 'order_list': None, 'timestep': 326}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 328:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}], 'order_list': None, 'timestep': 327}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 329:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}], 'order_list': None, 'timestep': 328}
+Agent idx: 0
+Player actions:
+('interact', (1, 0))
+Events: 0
+------------------------
+
+State 330:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}], 'order_list': None, 'timestep': 329}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 331:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}], 'order_list': None, 'timestep': 330}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 332:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}], 'order_list': None, 'timestep': 331}
+Agent idx: 0
+Player actions:
+('interact', 'interact')
+Events: 0
+------------------------
+
+State 333:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'dish', 'position': (2, 3), 'state': None}], 'order_list': None, 'timestep': 332}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 334:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (3, 3), 'state': None}}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}], 'order_list': None, 'timestep': 333}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 335:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (3, 2), 'state': None}}, {'position': (1, 3), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}], 'order_list': None, 'timestep': 334}
+Agent idx: 0
+Player actions:
+((0, 1), (0, -1))
+Events: 0
+------------------------
+
+State 336:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': {'name': 'dish', 'position': (3, 3), 'state': None}}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}], 'order_list': None, 'timestep': 335}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 337:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': {'name': 'dish', 'position': (3, 3), 'state': None}}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}], 'order_list': None, 'timestep': 336}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 338:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': {'name': 'dish', 'position': (3, 3), 'state': None}}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}], 'order_list': None, 'timestep': 337}
+Agent idx: 0
+Player actions:
+((0, -1), (0, -1))
+Events: 0
+------------------------
+
+State 339:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (3, 2), 'state': None}}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}], 'order_list': None, 'timestep': 338}
+Agent idx: 0
+Player actions:
+((0, -1), (0, -1))
+Events: 0
+------------------------
+
+State 340:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}], 'order_list': None, 'timestep': 339}
+Agent idx: 0
+Player actions:
+((0, -1), (0, -1))
+Events: 0
+------------------------
+
+State 341:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}], 'order_list': None, 'timestep': 340}
+Agent idx: 0
+Player actions:
+((0, -1), (0, -1))
+Events: 0
+------------------------
+
+State 342:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}], 'order_list': None, 'timestep': 341}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 343:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'soup', 'position': (3, 1), 'state': ['onion', 3, 20]}}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 342}
+Agent idx: 0
+Player actions:
+((0, -1), (-1, 0))
+Events: 0
+------------------------
+
+State 344:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'soup', 'position': (3, 1), 'state': ['onion', 3, 20]}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 343}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 345:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'soup', 'position': (3, 1), 'state': ['onion', 3, 20]}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [], 'order_list': None, 'timestep': 344}
+Agent idx: 0
+Player actions:
+((0, 1), 'interact')
+Events: 0
+------------------------
+
+State 346:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': {'name': 'soup', 'position': (3, 2), 'state': ['onion', 3, 20]}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 345}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 347:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': {'name': 'soup', 'position': (3, 3), 'state': ['onion', 3, 20]}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 346}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 20
+------------------------
+
+State 348:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 347}
+Agent idx: 0
+Player actions:
+((0, 0), (1, 0))
+Events: 0
+------------------------
+
+State 349:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 348}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 350:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 349}
+Agent idx: 0
+Player actions:
+((0, 1), 'interact')
+Events: 0
+------------------------
+
+State 351:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 350}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 352:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 351}
+Agent idx: 0
+Player actions:
+((0, -1), (-1, 0))
+Events: 0
+------------------------
+
+State 353:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 352}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 354:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 353}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 355:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 354}
+Agent idx: 0
+Player actions:
+((0, -1), 'interact')
+Events: 0
+------------------------
+
+State 356:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 355}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 357:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 356}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 358:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 357}
+Agent idx: 0
+Player actions:
+((-1, 0), (1, 0))
+Events: 0
+------------------------
+
+State 359:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 358}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 360:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 359}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 361:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 360}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 362:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 361}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 363:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [], 'order_list': None, 'timestep': 362}
+Agent idx: 0
+Player actions:
+((0, -1), 'interact')
+Events: 0
+------------------------
+
+State 364:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 363}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 365:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 364}
+Agent idx: 0
+Player actions:
+((0, -1), (-1, 0))
+Events: 0
+------------------------
+
+State 366:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 365}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 367:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'onion', 'position': (2, 1), 'state': None}, {'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 366}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 368:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 367}
+Agent idx: 0
+Player actions:
+((0, -1), 'interact')
+Events: 0
+------------------------
+
+State 369:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 1, 0]}], 'order_list': None, 'timestep': 368}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 370:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 369}
+Agent idx: 0
+Player actions:
+('interact', (1, 0))
+Events: 0
+------------------------
+
+State 371:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 370}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 372:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 371}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 373:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'onion', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 372}
+Agent idx: 0
+Player actions:
+((0, -1), 'interact')
+Events: 0
+------------------------
+
+State 374:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 373}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 375:
+State info: {'players': [{'position': (3, 1), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 374}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 376:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}, {'name': 'onion', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 375}
+Agent idx: 0
+Player actions:
+('interact', (0, 1))
+Events: 0
+------------------------
+
+State 377:
+State info: {'players': [{'position': (3, 1), 'orientation': (-1, 0), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 376}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 378:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 377}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 379:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 378}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 380:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': {'name': 'onion', 'position': (3, 1), 'state': None}}, {'position': (1, 2), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 2, 0]}], 'order_list': None, 'timestep': 379}
+Agent idx: 0
+Player actions:
+('interact', (0, 1))
+Events: 0
+------------------------
+
+State 381:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 1]}], 'order_list': None, 'timestep': 380}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 1))
+Events: 0
+------------------------
+
+State 382:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 2]}], 'order_list': None, 'timestep': 381}
+Agent idx: 0
+Player actions:
+((-1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 383:
+State info: {'players': [{'position': (3, 2), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (0, 1), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 3]}], 'order_list': None, 'timestep': 382}
+Agent idx: 0
+Player actions:
+((0, 1), (-1, 0))
+Events: 0
+------------------------
+
+State 384:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 4]}], 'order_list': None, 'timestep': 383}
+Agent idx: 0
+Player actions:
+('interact', 'interact')
+Events: 0
+------------------------
+
+State 385:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 5]}], 'order_list': None, 'timestep': 384}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 386:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 6]}], 'order_list': None, 'timestep': 385}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 387:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 3), 'orientation': (-1, 0), 'held_object': {'name': 'dish', 'position': (1, 3), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 7]}], 'order_list': None, 'timestep': 386}
+Agent idx: 0
+Player actions:
+('interact', (0, -1))
+Events: 0
+------------------------
+
+State 388:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 8]}], 'order_list': None, 'timestep': 387}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 389:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 9]}], 'order_list': None, 'timestep': 388}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 390:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 10]}], 'order_list': None, 'timestep': 389}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 391:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 2), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (1, 2), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 11]}], 'order_list': None, 'timestep': 390}
+Agent idx: 0
+Player actions:
+('interact', (0, -1))
+Events: 0
+------------------------
+
+State 392:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 12]}], 'order_list': None, 'timestep': 391}
+Agent idx: 0
+Player actions:
+((0, 1), (0, -1))
+Events: 0
+------------------------
+
+State 393:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 13]}], 'order_list': None, 'timestep': 392}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 394:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 14]}], 'order_list': None, 'timestep': 393}
+Agent idx: 0
+Player actions:
+('interact', (0, 0))
+Events: 0
+------------------------
+
+State 395:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (0, -1), 'held_object': {'name': 'dish', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 15]}], 'order_list': None, 'timestep': 394}
+Agent idx: 0
+Player actions:
+((0, 0), (1, 0))
+Events: 0
+------------------------
+
+State 396:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'dish', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 16]}], 'order_list': None, 'timestep': 395}
+Agent idx: 0
+Player actions:
+((1, 0), (0, 0))
+Events: 0
+------------------------
+
+State 397:
+State info: {'players': [{'position': (3, 3), 'orientation': (1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': {'name': 'dish', 'position': (1, 1), 'state': None}}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 17]}], 'order_list': None, 'timestep': 396}
+Agent idx: 0
+Player actions:
+((-1, 0), 'interact')
+Events: 0
+------------------------
+
+State 398:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 18]}, {'name': 'dish', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 397}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 399:
+State info: {'players': [{'position': (3, 3), 'orientation': (-1, 0), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 19]}, {'name': 'dish', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 398}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 400:
+State info: {'players': [{'position': (3, 3), 'orientation': (0, 1), 'held_object': None}, {'position': (1, 1), 'orientation': (1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'dish', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 399}
+Agent idx: 0
+Player actions:
+((0, -1), (-1, 0))
+Events: 0
+------------------------
+
+State 401:
+State info: {'players': [{'position': (3, 2), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'dish', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 400}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 402:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'dish', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 401}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 403:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'dish', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 402}
+Agent idx: 0
+Player actions:
+((0, 0), (0, 0))
+Events: 0
+------------------------
+
+State 404:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'dish', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 403}
+Agent idx: 0
+Player actions:
+((0, -1), (0, 0))
+Events: 0
+------------------------
+
+State 405:
+State info: {'players': [{'position': (3, 1), 'orientation': (0, -1), 'held_object': None}, {'position': (1, 1), 'orientation': (-1, 0), 'held_object': None}], 'objects': [{'name': 'soup', 'position': (3, 0), 'state': ['onion', 3, 20]}, {'name': 'dish', 'position': (2, 1), 'state': None}], 'order_list': None, 'timestep': 404}
+Agent idx: 0
+Player actions:
+((0, 1), (0, 0))
+Events: 0
+------------------------
+
+State 406:
+State info: []
+------------------------
+SECOND LAST STATE
+0
+LAST STATE
+[]
+
+ 
+ 
+
