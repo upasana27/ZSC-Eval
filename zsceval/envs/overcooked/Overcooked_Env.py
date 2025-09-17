@@ -426,6 +426,7 @@ class Overcooked(gym.Env):
         self.use_phi = all_args.use_phi
         self.use_hsp = all_args.use_hsp
         self.store_traj = getattr(all_args, "store_traj", False)
+        self.store_traj = True
         self.rank = rank
         self.random_index = all_args.random_index
         if self.use_hsp:
@@ -805,7 +806,6 @@ class Overcooked(gym.Env):
         available_actions = self._get_available_actions()
         if self.agent_idx == 1:
             available_actions = np.stack([available_actions[1], available_actions[0]])
-
         return both_agents_ob, share_obs, reward, done, info, available_actions
 
     def anneal_reward_shaping_factor(self, timesteps):
